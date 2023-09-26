@@ -338,7 +338,16 @@ header{
     display: none;
 }
 .elcien{
-    width: 100px;
-    height: 100px;
-    margin: 100px;
+    width: 400px;
+    height: 350px;
+    margin-top: 30px;
+}
+.elciens{
+    display: flex;
+    justify-content: space-evenly;
+}
+.elcien1{
+    margin-top: 150px;
+    font-size: 2.5rem;
+    color: rgb(127, 6, 6);
 }
