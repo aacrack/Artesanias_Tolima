@@ -10,26 +10,43 @@
 </head>
 <body>
     <header id="titulo2">
-        <div class="navigation"> 
-            <img class="logo91" src="img1/logo.jpeg" alt="">
+		<div id="menuprin" style="font-size: 110%;"> 
+            <form action="http://127.0.0.1:5501/INICIO/empresa.html">																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			
+            <button id="logo210"><img class="logo91" src="img1/logo.jpeg"  alt=""></button>
+		</form>
             <h1>PUEBLITO TOLIMENCE  </h1>
-
-            <ul>
-           <li> <a  href="http://127.0.0.1:5501/inicio/index.html">inicio</a></li>
-           <li><a  href="http://127.0.0.1:5501/sobrenosotros/spbrenosotros.html">sobre nosotros</a></li>
-
-           <li><a  href="http://127.0.0.1:5501/tienda%20onlinea/tienda.html">tienda online</a></li>
-           <li><a href="#titulo2">IR AL COMIENZO</a></li>   
-        </ul>
-        </div>
+			 <article>
+			<ul class="menu">
+				<li><a href="http://127.0.0.1:5501/INICIO/empresa.html">Inicio</a></li>
+				<li><a href="">Productos</a>
+					<ul class="menu1">
+						<li><a href="">manilla</a></li><br>
+						<li><a href="">bolsos</a></li><br>
+						<li><a href="">gorras</a></li>
+						
+					</ul>
+				</li>
+				<li><a href="sobrenosotros/spbrenosotros.html">Sobre nosotros</a></li>
+				</ul>
+				
+			</article>
+			
 		
-           <section class="textos-header">
-            <h1 > TIENDA ARTESANIAS</h1>
-            <h2>PUEBLITO TOLIMENSE </h2>
+        </div>
+		<section class="textos-header">
+        
+            
     
            </section>
-           
-		   <div class="container-icon">
+        <div class="content">
+
+        </div>
+           <section class="textos-header">
+            <h1 class="titulo"> TIENDA ONLINE</h1>
+        
+           </section>
+
+           <div class="container-icon">
 			<div class="container-cart-icon">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +82,44 @@
 							stroke-width="1.5"
 							stroke="currentColor"
 							class="icon-close"
-						>__
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M6 18L18 6M6 6l12 12"
+							/>
+						</svg>
+					</div>
+				</div>
+
+				<div class="cart-total hidden">
+					<h3>Total:</h3>
+					<span class="total-pagar">$200</span>
+				</div>
+				<p class="cart-empty">El carrito está vacío</p>
+			</div>
+		</div>
+		
+		
+           </section>
+		   
+
+			<div class="container-cart-products hidden-cart">
+				<div class="row-product hidden">
+					<div class="cart-product">
+						<div class="info-cart-product">
+							<span class="cantidad-producto-carrito">1</span>
+							<p class="titulo-producto-carrito">Zapatos Nike</p>
+							<span class="precio-producto-carrito">$80</span>
+						</div>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="icon-close"
+						>
 							<path
 								stroke-linecap="round"
 								stroke-linejoin="round"
@@ -83,59 +137,52 @@
 			</div>
 		</div>
         </header>
-
-		<section>
-			<div class="elciens">
-		<img class="elcien" src="img1/tasa.jpeg" alt="">
-		<h1 class="elcien1">NUESTROS PRODUCTOS SON       <br>100% ARTESANALES</h1>
-	</div>
-	</section>
-		<h2 class="titulo">PRODUCTOS QUE OFRECEMOS</h2>
+		<h2 class="titulo">PRODUCTOS QUE OFRESEMOS</h2>
         <div class="container-items">
 			<div class="item">
 				<figure>
 					<img
-						src="img1/lapicero.jpeg"
+						src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
 						alt="producto"
 					/>
 				</figure>
 				<div class="info-product">
-					<h2>Lapiceros artesanales</h2>
-					<p class="price">$500</p>
+					<h2>Zapatos Nike</h2>
+					<p class="price">$80</p>
 					<button class="btn-add-cart">Añadir al carrito</button>
 				</div>
 			</div>
 			<div class="item">
 				<figure>
 					<img
-						src="img1/manilla.jpeg"
+						src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
 						alt="producto"
 					/>
 				</figure>
 				<div class="info-product">
-					<h2>Manillas</h2>
-					<p class="price">$2.500</p>
+					<h2>Audifonos</h2>
+					<p class="price">$20</p>
 					<button class="btn-add-cart">Añadir al carrito</button>
 				</div>
 			</div>
 			<div class="item">
 				<figure>
 					<img
-						src="img1/logo.jpeg"
+						src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1099&q=80"
 						alt="producto"
 					/>
 				</figure>
 				<div class="info-product">
-					<h2>Taza</h2>
+					<h2>Reloj</h2>
 					<p class="price">$50</p>
 					<button class="btn-add-cart">Añadir al carrito</button>
 				</div>
 			</div>
 			<div class="item">
 				<figure>
-					<img class="imgtasa"
-						src="img1/tasa.jpeg "
-						alt="producto" 
+					<img
+						src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+						alt="producto"
 					/>
 				</figure>
 				<div class="info-product">
@@ -170,6 +217,6 @@
         <p>si artesanias deseas adquirir a pueblito tolimense deberias asistir</p>
     
     </footer>
-    <script src="esrilo.js"></script>
+    <script src="/javascrip/esrilo.js"></script>
 </body>
 </html>

@@ -30,7 +30,7 @@ header{
 
 header .textos-header{
     display: flex;
-    height: 430px;
+    height: 400px;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -42,6 +42,7 @@ header .cer{
     color: rgb(198, 192, 192);
 }
 .textos-header h1{
+    margin: 100px 0px 0px  -630px ;
     text-shadow: 4px 3px 3px white;
     font-size:60px;
     color:rgb(0, 0, 0);
@@ -85,18 +86,21 @@ footer a{
     color: blueviolet;
   
 }
-.navigation{
-    z-index: 2;
+
+
+#menuprin{
+   
     margin-top: -30px;
     position: fixed;
-    height: 80px;
+    
     right: 0;
     left: 0;
     background-color: #41415098;
     box-sizing: border-box;
+    height: 100px;
     
 }
-.navigation h1{
+#menuprin h1{
     font-size: 1.5rem;
     position: fixed;
     top: 10px;
@@ -106,29 +110,7 @@ footer a{
     color: #edd12f;
     
 }
-ul{
-    position: relative;
-    left: 600px;
-    margin-top: -87px;
-    
-}
-li{
-    display: inline-block;
-    margin-left: 10px;
-    padding-top: 30px;
-    font-weight: bold;
-    list-style: none;
-    text-align: center;
-    text-transform: uppercase;
-}
-a{
-    color: #ffffff;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    transition: 0.5s;
 
-}
 a:hover{
     background-color: rgb(72, 83, 83);
     box-shadow: 0px 0px 400px 86px rgb(82, 95, 91);
@@ -136,12 +118,7 @@ a:hover{
     -moz-box-shadow: 0px 0px 400px 86px rgb(82, 95, 91); 
     text-decoration: underline white;
 }
-.logo91{
-    height: 60px;
-    width: 60px;
-    align-items: flex-start;
-    margin: 10px;
-}
+
 
 
 .icon-cart{
@@ -155,7 +132,6 @@ a:hover{
 }
 
 img{
-    height: 10px;
     max-width: 100%;
 }
 
@@ -298,13 +274,8 @@ header{
     transition: all .5s;
 }
 
-.item figure{
-    overflow: hidden;
-}
 
-.item:hover img{
-    transform: scale(1.2);
-}
+
 
 .info-product{
     padding: 15px 30px;
@@ -337,17 +308,75 @@ header{
 .hidden{
     display: none;
 }
-.elcien{
-    width: 400px;
-    height: 350px;
-    margin-top: 30px;
+.PP{
+    margin: 400px 100px 0px -700;
+
 }
-.elciens{
+.menu{
+    list-style: none;
+    font-size: 1.5rem;
+    margin-left: 900px;
+    margin-top: -80px;
+    background-color: #000;
+    list-style: none;
+
+}
+.menu li a {
+    
+    background-color: #00000000;
+    color: black;
+    text-decoration: none;
+    padding: 20px 10px;
+    display: block;
+}
+
+.menu > li {
+    float:left;
+}
+.menu li ul {
+    list-style: none;
+    margin-left: 200px;
+    display: none;
+    position:absolute;
+    min-width: 140px;
+}
+.menu li:hover > ul {
+    display: block;
+}
+.menu li ul {
+
+    margin: 0px 0px 0px -10px;
+    columns:auto ;
+    
+}
+.menu li ul li  {
+    right: -100px;
+    top: 10px;
+    font-style: none;
+}
+
+.titulo{
+    margin-left: -30px;
+}
+.menu1{
+    list-style-type: disc;
+    background-color: rgb(255, 255, 255);
     display: flex;
-    justify-content: space-evenly;
+    
+    
 }
-.elcien1{
-    margin-top: 150px;
-    font-size: 2.5rem;
-    color: rgb(127, 6, 6);
+ul li::marker{
+    font-size: 30px;
+    color: black;
 }
+#logo21{
+    margin: 10px 11px 0px 6px;
+
+}
+.logo91{
+    height: 60px;
+    width: 60px;
+    align-items: flex-start;
+    margin: 0px 0px 0px 0px;
+}
+
