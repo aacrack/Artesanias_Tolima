@@ -1,3 +1,4 @@
+/* Globales */
 *::after,
 *::before,
 *{
@@ -9,26 +10,59 @@
 body{
     font-family: 'Lato';
     color: #333;
-    background-image: url(img2/fondo2.png);
+    background-image: url(img1/fondo2.jpg);
     background-size: cover;
     background-attachment: fixed ;
     position: relative;
 }
+
 
 header{
     width: 100%;
-    height: 500px;
+    height: 600px;
     background-image: url(img2/hola.jpg);
-    opacity: 90%;
     background-size: cover;
+    opacity: 90%;
     background-attachment: fixed ;
     position: relative;
 }
 
 
-
+header .textos-header{
+    display: flex;
+    height: 400px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    text-align:center;
+    
+}
+header .cer{
+    color: rgb(198, 192, 192);
+}
+.textos-header h1{
+    margin: 100px 0px 0px  -630px ;
+    text-shadow: 4px 3px 3px white;
+    font-size:60px;
+    color:rgb(0, 0, 0);
+}
+.textos-header h2{
+    text-shadow: 4px 3px 3px white;
+    font-size:60px;
+    font-weight: 300;
+    color:rgb(0, 0, 0);
+}
+ .titulo{
+    text-align: center;
+    margin: 30px 0px;
+    color: brown;
+ }
+ .servicio-ind p{
+    text-decoration: none;
+    
+ }
  footer{
-  
     background-color: rgb(23, 23, 30);
     padding: 3rem;
     color:rgb(255, 255, 255);
@@ -50,42 +84,12 @@ footer a{
 }
  footer a:hover{
     color: blueviolet;
- }
-
-
- header .textos-header{
-    display: flex;
-    height: 430px;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    flex-direction:column;
-    text-align:center;
-    
-} 
-
-a{
-    color: #fffdfd;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    transition: 0.5s;
-
-} 
-.logo91{
-    height: 60px;
-    width: 60px;
-    align-items: flex-start;
-    margin: 10px;
+  
 }
-a:hover{
-    background-color: rgb(72, 83, 83);
-    box-shadow: 0px 0px 400px 86px rgb(82, 95, 91);
-    -webkit-box-shadow:  0px 0px 400px 86px rgb(82, 95, 91);
-    -moz-box-shadow: 0px 0px 400px 86px rgb(82, 95, 91); 
-    text-decoration: underline white;
-}
+
+
 #menuprin{
+   
     margin-top: -30px;
     position: fixed;
     
@@ -93,6 +97,7 @@ a:hover{
     left: 0;
     background-color: #41415098;
     box-sizing: border-box;
+    height: 100px;
     
 }
 #menuprin h1{
@@ -106,29 +111,30 @@ a:hover{
     
 }
 
-
-
-.textos-header h1{
-    text-shadow: 4px 3px 3px white;
-    font-size:60px;
-    color:rgb(0, 0, 0);
+a:hover{
+    background-color: rgb(72, 83, 83);
+    box-shadow: 0px 0px 400px 86px rgb(82, 95, 91);
+    -webkit-box-shadow:  0px 0px 400px 86px rgb(82, 95, 91);
+    -moz-box-shadow: 0px 0px 400px 86px rgb(82, 95, 91); 
+    text-decoration: underline white;
 }
 
-ul{
-    position: relative;
-    left: 600px;
-    margin-top: -85px;
-    
+
+
+.icon-cart{
+    width: 40px;
+    height: 40px;
+    stroke: #000;
 }
-li{
-    display: inline-block;
-    margin-left: 10px;
-    padding-top: 30px;
-    font-weight: bold;
-    list-style: none;
-    text-align: center;
-    text-transform: uppercase;
+
+.icon-cart:hover{
+    cursor: pointer;
 }
+
+img{
+    max-width: 100%;
+}
+
 /* Header */
 header{
     display: flex;
@@ -137,7 +143,7 @@ header{
 }
 
 .container-icon{
-    width: 40px;
+    z-index: 3;
     border:solid 3px rgba(255, 255, 255, 0.234);
     margin-top: -10px;
    margin-left: 1265px;
@@ -268,13 +274,8 @@ header{
     transition: all .5s;
 }
 
-.item figure{
-    overflow: hidden;
-}
 
-.item:hover img{
-    transform: scale(1.2);
-}
+
 
 .info-product{
     padding: 15px 30px;
@@ -307,12 +308,18 @@ header{
 .hidden{
     display: none;
 }
+.PP{
+    margin: 400px 100px 0px -700;
+
+}
 .menu{
     list-style: none;
     font-size: 1.5rem;
     margin-left: 900px;
     margin-top: -80px;
     background-color: #000;
+    list-style: none;
+
 }
 .menu li a {
     
@@ -327,7 +334,7 @@ header{
     float:left;
 }
 .menu li ul {
-    
+    list-style: none;
     margin-left: 200px;
     display: none;
     position:absolute;
@@ -336,12 +343,45 @@ header{
 .menu li:hover > ul {
     display: block;
 }
-.menu li ul li {
-    position: relative;
-    margin: 0px 0px 0px -200px;
+.menu li ul {
+
+    margin: 0px 0px 0px -10px;
     columns:auto ;
+    
 }
-.menu li ul li ul {
+.menu li ul li  {
     right: -100px;
     top: 10px;
+    font-style: none;
 }
+
+.titulo{
+    margin-left: -30px;
+}
+.menu1{
+    list-style-type: disc;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    
+    
+}
+ul li::marker{
+    font-size: 30px;
+    color: black;
+}
+#logo21{
+    margin: 10px 11px 0px 6px;
+
+}
+.logo91{
+    height: 60px;
+    width: 60px;
+    align-items: flex-start;
+    margin: 0px 0px 0px 0px;
+}
+@media screen and (max-width: 1200px) {
+    
+
+    
+}
+

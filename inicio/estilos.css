@@ -379,4 +379,9 @@ ul li::marker{
     align-items: flex-start;
     margin: 0px 0px 0px 0px;
 }
+@media screen and (max-width: 1200px) {
+    
+
+    
+}
 
