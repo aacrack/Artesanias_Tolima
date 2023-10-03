@@ -10,7 +10,7 @@
 body{
     font-family: 'Lato';
     color: #333;
-    background-image: url(img1/fondo2.jpg);
+    background-image: url(img1/fondo2.png);
     background-size: cover;
     background-attachment: fixed ;
     position: relative;
@@ -378,6 +378,25 @@ ul li::marker{
     width: 60px;
     align-items: flex-start;
     margin: 0px 0px 0px 0px;
+}
+.Eslogan2{
+text-align: center;
+padding:50px;
+font-size: 30px;
+color: rgb(103, 30, 30);
+}
+.Eslogan_img{
+   margin: 10px 0 0px 100px;
+   width: 450px;
+   height: 400px;
+
+}
+.Eslogan_b{
+ position: absolute;
+ margin: 0 0 0 650px;
+ font-size: 35px;
+ margin-top: -225px;
+
 }
 @media screen and (max-width: 1200px) {
     
