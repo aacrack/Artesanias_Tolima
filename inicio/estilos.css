@@ -29,6 +29,7 @@ header{
 
 
 header .textos-header{
+    
     display: flex;
     height: 400px;
     width: 100%;
@@ -41,23 +42,13 @@ header .textos-header{
 header .cer{
     color: rgb(198, 192, 192);
 }
-.textos-header h1{
-    margin: 100px 0px 0px  -630px ;
+.textos-header h1{  
     text-shadow: 4px 3px 3px white;
     font-size:60px;
-    color:rgb(0, 0, 0);
+    color:rgb(239, 3, 3) ;
 }
-.textos-header h2{
-    text-shadow: 4px 3px 3px white;
-    font-size:60px;
-    font-weight: 300;
-    color:rgb(0, 0, 0);
-}
- .titulo{
-    text-align: center;
-    margin: 30px 0px;
-    color: brown;
- }
+
+
  .servicio-ind p{
     text-decoration: none;
     
@@ -314,9 +305,9 @@ header{
 }
 .menu{
     list-style: none;
-    font-size: 1.5rem;
-    margin-left: 900px;
-    margin-top: -80px;
+    font-size: 2rem;
+    margin-left: 850px;
+    margin-top: -55px;
     background-color: #000;
     list-style: none;
 
