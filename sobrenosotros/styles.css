@@ -118,38 +118,7 @@ footer a{
 #llegar{
     text-decoration: none;
 }
-/* nav{
-    padding: 10px 5px 0 0;
-    text-align: right;
-}
-nav > a:hover{
-    text-decoration: underline;
-}
-article h1{
-    font-size: 2rem;
-}
-ol h1{
-    font-size: 2rem;
-    color: blueviolet;
-}
-ol h3{
-    font-size: 2rem;
-}
-ul{
-    position: relative;
-    left: 650px;
-    margin-top: -140px;
-    
-}
-li{
-    display: inline-block;
-    margin-left: 10px;
-    padding-top: 30px;
-    font-weight: bold;
-    list-style: none;
-    text-align: center;
-    text-transform: uppercase;
-} */
+
 
 a{
     color: #fffdfd;
@@ -167,7 +136,7 @@ a:hover{
     text-decoration: underline white;
 }
 #menuprin{
-   
+   z-index: 1;
     margin-top: -30px;
     position: fixed;
     
@@ -240,7 +209,7 @@ a:hover{
     margin-top: -80px;
     background-color: #000;
     list-style: none;
-
+    z-index: 0;
 }
 .menu li a {
     
@@ -307,4 +276,28 @@ a:hover{
 #logo21{
     margin: 10px 11px 0px 6px;
 
+}
+.vision_mision{
+    background-color: white;
+    width: 800px;
+    margin-left: 200px;
+    padding: 30px;
+}
+.vision_mision article{
+    background-color: white;
+    text-align: left;
+    width: 400px;
+}
+.vision_mision nav{
+    background-color: rgb(21, 232, 151);
+    position: absolute;
+    width: 400px;
+    height: 100px;
+    margin-left: 450px;
+    margin-top: -500px ;
+}
+.vision_mision nav img{
+    height: 500px;
+    width: 500px;
+    z-index: 0;
 }

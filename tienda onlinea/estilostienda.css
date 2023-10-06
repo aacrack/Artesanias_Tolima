@@ -10,10 +10,13 @@
 body{
     font-family: 'Lato';
     color: #333;
-    background-image: url(img1/fondo2.jpg);
+    background-image: url(img2/fondo2.png);
     background-size: cover;
     background-attachment: fixed ;
     position: relative;
+}
+body img{
+    z-index: 0;
 }
 
 
@@ -92,7 +95,7 @@ footer a{
    
     margin-top: -30px;
     position: fixed;
-    
+    z-index: 3;
     right: 0;
     left: 0;
     background-color: #41415098;
