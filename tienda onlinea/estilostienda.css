@@ -114,13 +114,7 @@ footer a{
     
 }
 
-a:hover{
-    background-color: rgb(72, 83, 83);
-    box-shadow: 0px 0px 400px 86px rgb(82, 95, 91);
-    -webkit-box-shadow:  0px 0px 400px 86px rgb(82, 95, 91);
-    -moz-box-shadow: 0px 0px 400px 86px rgb(82, 95, 91); 
-    text-decoration: underline white;
-}
+
 
 
 
@@ -379,6 +373,18 @@ ul li::marker{
     position: absolute;
     height: 30px;
     width: 30px;
+}
+.cart-total {
+    margin-left: 10px;
+}
+.botoncom{
+    background-color: #222222; 
+    height: 30px;
+    border: 2px black solid;
+}
+.botoncom a{
+    color: white;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 1200px) {
