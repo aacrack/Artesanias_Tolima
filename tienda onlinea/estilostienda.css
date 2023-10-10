@@ -15,11 +15,6 @@ body{
     background-attachment: fixed ;
     position: relative;
 }
-body img{
-    z-index: 0;
-}
-
-
 header{
     width: 100%;
     height: 600px;
@@ -39,110 +34,34 @@ header .textos-header{
     justify-content: center;
     flex-direction:column;
     text-align:center;
-    
+    margin-left: 650px;
 }
-header .cer{
-    color: rgb(198, 192, 192);
-}
+
 .textos-header h1{
     margin: 100px 0px 0px  -630px ;
     text-shadow: 4px 3px 3px white;
     font-size:60px;
     color:rgb(0, 0, 0);
 }
-.textos-header h2{
-    text-shadow: 4px 3px 3px white;
-    font-size:60px;
-    font-weight: 300;
-    color:rgb(0, 0, 0);
-}
+
  .titulo{
     text-align: center;
     margin: 30px 0px;
     color: brown;
  }
- .servicio-ind p{
-    text-decoration: none;
-    
- }
- footer{
-    background-color: rgb(23, 23, 30);
-    padding: 3rem;
-    color:rgb(255, 255, 255);
-    font-size:20px;
-}
-footer section{
-    float: right;
-}
-footer p{
-    margin: 0;
-
-}
-footer a{ 
-    transition: 3s;
-    color: aliceblue;
-    text-decoration: none;
-    padding: 2rem 2rem;
-    
-}
- footer a:hover{
-    color: blueviolet;
-  
-}
-
-
-#menuprin{
-   
-    margin-top: -30px;
-    position: fixed;
-    z-index: 3;
-    right: 0;
-    left: 0;
-    background-color: #41415098;
-    box-sizing: border-box;
-    height: 100px;
-    
-}
-#menuprin h1{
-    font-size: 1.5rem;
-    position: fixed;
-    top: 10px;
-    left: 0;
-    margin: 15px 20px 0 90px;
-    font-family: Arial;
-    color: #edd12f;
-    
-}
-
-
-
-
 
 .icon-cart{
-    width: 40px;
+    width: 40px; /* no borrar añadir */
     height: 40px;
     stroke: #000;
 }
-
-.icon-cart:hover{
-    cursor: pointer;
-}
-
 img{
     max-width: 100%;
 }
-
-/* Header */
-header{
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 0 40px 0;
-}
-
 .container-icon{
     z-index: 3;
     border:solid 3px rgba(255, 255, 255, 0.234);
-    margin-top: -10px;
+    margin-top: -10px;   /* no borrar añadir */
    margin-left: 1265px;
     position: fixed;
 }
@@ -153,7 +72,7 @@ header{
     right: 0;
 
     background-color: #000;
-    color: #fff;
+    color: #fff;  /* no borrar añadir */
     width: 25px;
     height: 25px;
 
@@ -162,11 +81,6 @@ header{
     align-items: center;
     border-radius: 50%;
 }
-
-#contador-productos{
-    font-size: 12px;
-}
-
 .container-cart-products{
     position: absolute;
     top: 50px;
@@ -243,10 +157,6 @@ header{
     display: none;
 }
 
-
-
-
-/* Main */
 .container-items{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -254,13 +164,12 @@ header{
 }
 
 .item{
-    margin: 30px;
+    margin: 10px;
     border-radius: 10px;
     height: 380px;
 }
 
 .item:hover{
-    
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
 }
 
@@ -294,88 +203,6 @@ header{
 
 .hidden{
     display: none;
-}
-.PP{
-    margin: 400px 100px 0px -700;
-
-}
-.menu{
-    list-style: none;
-    font-size: 1.5rem;
-    margin-left: 900px;
-    margin-top: -80px;
-    background-color: #000;
-    list-style: none;
-    
-}
-.menu li a {
-    
-    background-color: #00000000;
-    color: black;
-    text-decoration: none;
-    padding: 20px 10px;
-    display: block;
-}
-
-.menu > li {
-    float:left;
-}
-.menu li ul {
-    list-style: none;
-    margin-left: 200px;
-    display: none;
-    position:absolute;
-    min-width: 140px;
-}
-.menu li:hover > ul {
-    display: block;
-}
-.menu li ul {
-
-    margin: 0px 0px 0px -10px;
-    columns:auto ;
-    
-}
-.menu li ul li  {
-    right: -100px;
-    top: 10px;
-    font-style: none;
-}
-
-.titulo{
-    margin-left: -30px;
-}
-.menu1{
-    list-style-type: disc;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    
-    
-}
-ul li::marker{
-    font-size: 30px;
-    color: black;
-}
-#logo21{
-    margin: 10px 11px 0px 6px;
-
-}
-.logo91{
-    height: 60px;
-    width: 60px;
-    align-items: flex-start;
-    margin: 0px 0px 0px 0px;
-}
-
-.botom_mas2{
-    margin-top: 14px;
-    margin-left: 280px;
-    position: absolute;
-    height: 30px;
-    width: 30px;
-}
-.cart-total {
-    margin-left: 10px;
 }
 .botoncom{
     background-color: #222222; 

@@ -47,61 +47,6 @@ header .cer{
     font-size:60px;
     color:rgb(239, 3, 3) ;
 }
-
-
- .servicio-ind p{
-    text-decoration: none;
-    
- }
- footer{
-    background-color: rgb(23, 23, 30);
-    padding: 3rem;
-    color:rgb(255, 255, 255);
-    font-size:20px;
-}
-footer section{
-    float: right;
-}
-footer p{
-    margin: 0;
-
-}
-footer a{ 
-    transition: 3s;
-    color: aliceblue;
-    text-decoration: none;
-    padding: 2rem 2rem;
-    
-}
- footer a:hover{
-    color: blueviolet;
-  
-}
-
-
-#menuprin{
-   
-    margin-top: -30px;
-    position: fixed;
-    
-    right: 0;
-    left: 0;
-    background-color: #41415098;
-    box-sizing: border-box;
-    height: 100px;
-    
-}
-#menuprin h1{
-    font-size: 1.5rem;
-    position: fixed;
-    top: 10px;
-    left: 0;
-    margin: 15px 20px 0 90px;
-    font-family: Arial;
-    color: #edd12f;
-    
-}
-
 a:hover{
     background-color: rgb(72, 83, 83);
     box-shadow: 0px 0px 400px 86px rgb(82, 95, 91);
@@ -111,265 +56,6 @@ a:hover{
 }
 
 
-
-.icon-cart{
-    width: 40px;
-    height: 40px;
-    stroke: #000;
-}
-
-.icon-cart:hover{
-    cursor: pointer;
-}
-
-img{
-    max-width: 100%;
-}
-
-/* Header */
-header{
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 0 40px 0;
-}
-
-.container-icon{
-    z-index: 3;
-    border:solid 3px rgba(255, 255, 255, 0.234);
-    margin-top: -10px;
-   margin-left: 1265px;
-    position: fixed;
-}
-
-.count-products{
-    position: absolute;
-    top: 55%;
-    right: 0;
-
-    background-color: #000;
-    color: #fff;
-    width: 25px;
-    height: 25px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-}
-
-#contador-productos{
-    font-size: 12px;
-}
-
-.container-cart-products{
-    position: absolute;
-    top: 50px;
-    right: 0;
-
-    background-color: #fff;
-    width: 400px;
-    z-index: 1;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
-    border-radius: 10px;
-    
-}
-
-.cart-product{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px;
-
-    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
-
-}
-
-.info-cart-product{
-    display: flex;
-    justify-content: space-between;
-    flex: 0.8;
-}
-
-.titulo-producto-carrito{
-    font-size: 20px;
-}
-
-.precio-producto-carrito{
-    font-weight: 700;
-    font-size: 20px;
-    margin-left: 10px;
-}
-
-.cantidad-producto-carrito{
-    font-weight: 400;
-    font-size: 20px;
-}
-
-.icon-close{
-    width: 25px;
-    height: 25px;
-}
-
-.icon-close:hover{
-    stroke: red;
-    cursor: pointer;
-}
-
-.cart-total{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
-    gap: 20px;
-}
-
-.cart-total h3{
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.total-pagar{
-    font-size: 20px;
-    font-weight: 900;
-}
-
-.hidden-cart{
-    display: none;
-}
-
-
-
-
-/* Main */
-.container-items{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.item{
-    margin: 30px;
-    border-radius: 50px;
-}
-
-.item:hover{
-    
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
-}
-
-.item img{
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-    transition: all .5s;
-}
-
-
-
-
-.info-product{
-    padding: 15px 30px;
-    line-height: 2;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.price{
-    font-size: 18px;
-    font-weight: 900;
-}
-
-.info-product button{
-    border: none;
-    background: none;
-    background-color: #000;
-    color: #fff;
-    padding: 15px 10px;
-    cursor: pointer;
-}
-
-.cart-empty{
-    padding: 20px;
-    text-align: center;
-}
-
-
-.hidden{
-    display: none;
-}
-.PP{
-    margin: 400px 100px 0px -700;
-
-}
-.menu{
-    list-style: none;
-    font-size: 2rem;
-    margin-left: 850px;
-    margin-top: -55px;
-    background-color: #000;
-    list-style: none;
-
-}
-.menu li a {
-    
-    background-color: #00000000;
-    color: black;
-    text-decoration: none;
-    padding: 20px 10px;
-    display: block;
-}
-
-.menu > li {
-    float:left;
-}
-.menu li ul {
-    list-style: none;
-    margin-left: 200px;
-    display: none;
-    position:absolute;
-    min-width: 140px;
-}
-.menu li:hover > ul {
-    display: block;
-}
-.menu li ul {
-
-    margin: 0px 0px 0px -10px;
-    columns:auto ;
-    
-}
-.menu li ul li  {
-    right: -100px;
-    top: 10px;
-    font-style: none;
-}
-
-.titulo{
-    margin-left: -30px;
-}
-.menu1{
-    list-style-type: disc;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    
-    
-}
-ul li::marker{
-    font-size: 30px;
-    color: black;
-}
-#logo21{
-    margin: 10px 11px 0px 6px;
-
-}
-.logo91{
-    height: 60px;
-    width: 60px;
-    align-items: flex-start;
-    margin: 0px 0px 0px 0px;
-}
 .Eslogan2{
 text-align: center;
 padding:50px;
@@ -380,15 +66,22 @@ color: rgb(103, 30, 30);
    margin: 10px 0 0px 100px;
    width: 450px;
    height: 400px;
-
 }
 .Eslogan_b{
  position: absolute;
  margin: 0 0 0 650px;
  font-size: 35px;
  margin-top: -225px;
-
 }
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1200px) {
     
 
