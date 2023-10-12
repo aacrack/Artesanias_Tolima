@@ -1,97 +1,138 @@
-header{
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 0 40px 0;
-}
-#menuprin{
+#titulo2 {
+    position: fixed;
    
-    margin-top: -30px;
-    position: fixed;
+    background: rgb(173, 48, 10);
     
-    right: 0;
-    left: 0;
-    background-color: #41415098;
-    box-sizing: border-box;
-    height: 100px;
-    
-}
-#menuprin h1{
-    font-size: 1.5rem;
-    position: fixed;
-    top: 10px;
-    left: 0;
-    margin: 15px 20px 0 90px;
-    font-family: Arial;
-    color: #edd12f;
-    
-}
-.menu{
-    list-style: none;
-    font-size: 1.5rem;
-    margin-left: 900px;
-    margin-top: -80px;
-    background-color: #000;
-    list-style: none;
-
-}
-.menu li a {
-    
-    background-color: #00000000;
-    color: black;
-    text-decoration: none;
-    padding: 20px 10px;
-    display: block;
-}
-
-.menu > li {
-    float:left;
-}
-.menu li ul {
-    list-style: none;
-    margin-left: 200px;
-    display: none;
-    position:absolute;
-    min-width: 140px;
-}
-.menu li:hover > ul {
-    display: block;
-}
-.menu li ul {
-
-    margin: 0px 0px 0px -10px;
-    columns:auto ;
-    
-}
-.menu li ul li  {
-    right: -100px;
-    top: 10px;
-    font-style: none;
-}
-
-.titulo{
-    margin-left: -30px;
-}
-.menu1{
-    list-style-type: disc;
-    background-color: rgb(255, 255, 255);
+    padding: 0px 4%;
     display: flex;
-    
-    
-}
-ul li::marker{
-    font-size: 30px;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    height: 80px;
+    background-image: url(img1/fondo.jpeg);
+    width: 100%;
+  }
+.pue{
+    margin-left: 10px;
     color: black;
 }
-#logo21{
-    margin: 10px 11px 0px 6px;
-
-}
-.logo91{
+  header .logo1  img{
+    margin-left: -60px;
+    position: absolute;
     height: 60px;
-    width: 60px;
-    align-items: flex-start;
-    margin: 0px 0px 0px 0px;
-}
+    margin-top: -10px
+  }
+  header .navbar ul {
+    list-style: none;
+  }
+  header .navbar ul li {
+    position: relative;
+    float: left;
+  }
+  header .navbar ul li a {
+    font-size: 20px;
+    padding: 20px;
+    color: #333;
+    display: block;
+  }
+  header .navbar ul li a:hover {
+    background: #333;
+    color: #fff;
+  }
+  
+  header .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 200px;
+    background: transparent;
+    display: none;
+  }
+  
+  header .navbar ul li ul li {
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+  }
+  
+  header .navbar ul li ul li ul {
+    left: 100px;
+    top: 0;
+  }
+  
+  header .navbar ul li:hover > ul {
+    display: block;
+  }
+  
+  #menu-bar {
+    display: none;
+  }
+  
+  header label {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+  }
+
+@media screen and (max-width:991px) {
+    header {
+        padding: 20px;
+    }
+  
+    header label {
+        display: initial;
+    }
+  
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: pink;
+        border-top: 1px solid rgba(0, 0, 0, .1);
+        display: none;
+    }
+  
+    header .navbar.show-menu {
+        display: block;
+    }
+  
+    header .navbar ul li {
+        width: 100%;
+    }
+  
+    header .navbar ul li ul {
+        position: relative;
+        width: 100%;
+    }
+  
+    header .navbar ul li ul li {
+        background: pink;
+    }
+  
+    header .navbar ul li ul li ul {
+        width: 100%;
+        left: 0;
+    }
+    #menu-bar:checked ~ .navbar {
+        display: initial;
+    }
+
+    /* submenú "NOSOTROS" */
+    header .navbar .nosotros-sub-menu {
+        display: none;
+        position: relative;
+    }
+  
+    header .navbar .nosotros-sub-menu.show-nosotros {
+        display: block;
+      }
+     header .logo1  {
+          padding-left: 55px ;
+        }
+        
+  
+  }
 footer{
     background-color: rgb(23, 23, 30);
     padding: 3rem;

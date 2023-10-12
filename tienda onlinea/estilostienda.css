@@ -15,35 +15,6 @@ body{
     background-attachment: fixed ;
     position: relative;
 }
-header{
-    width: 100%;
-    height: 600px;
-    background-image: url(img2/hola.jpg);
-    background-size: cover;
-    opacity: 90%;
-    background-attachment: fixed ;
-    position: relative;
-}
-
-
-header .textos-header{
-    display: flex;
-    height: 400px;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    flex-direction:column;
-    text-align:center;
-    margin-left: 650px;
-}
-
-.textos-header h1{
-    margin: 100px 0px 0px  -630px ;
-    text-shadow: 4px 3px 3px white;
-    font-size:60px;
-    color:rgb(0, 0, 0);
-}
-
  .titulo{
     text-align: center;
     margin: 30px 0px;
@@ -62,7 +33,7 @@ img{
     z-index: 3;
     border:solid 3px rgba(255, 255, 255, 0.234);
     margin-top: -10px;   /* no borrar añadir */
-   margin-left: 1265px;
+   margin-left: 1175px;
     position: fixed;
 }
 
@@ -213,6 +184,21 @@ img{
     color: white;
     text-decoration: none;
 }
+.headerjiji{
+    background-image: url(img2/hola.jpg);
+    height: 600px;
+    background-size: cover;
+  opacity: 90%;
+  background-attachment: fixed ;
+  position: relative;
+}
+.headerjeje{
+    position: absolute;
+  color: rgb(255, 255, 255);
+  font-size:4rem;
+  margin-left:30%;
+  margin-top: 240px;
+}
 
 @media screen and (max-width: 1200px) {
     
@@ -220,3 +206,141 @@ img{
     
 }
 
+#titulo2 {
+    position: fixed;
+    background: rgb(173, 48, 10);
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    z-index: 1000;
+    height: 80px;
+    background-image: url(img1/fondo.jpeg);
+    width: 100%;
+  }
+.pue{
+    margin-left: 45px;
+    color: black;
+}
+  header .logo1  img{
+    margin-left: -20px;
+    position: absolute;
+    height: 60px;
+    margin-top: -10px
+  }
+  .logo1 {
+    margin-left: -50px;
+  }
+  header .navbar ul {
+    list-style: none;
+  }
+  header .navbar ul li {
+    position: relative;
+    float: left;
+  }
+  header .navbar ul li a {
+    font-size: 20px;
+    padding: 20px;
+    color: #333;
+    display: block;
+    text-decoration: none;
+
+  }
+  header .navbar ul li a:hover {
+    background: #333;
+    color: #fff;
+  }
+  
+  header .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 200px;
+    background: transparent;
+    display: none;
+  }
+  
+  header .navbar ul li ul li {
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+  }
+  
+  header .navbar ul li ul li ul {
+    left: 100px;
+    top: 0;
+  }
+  
+  header .navbar ul li:hover > ul {
+    display: block;
+  }
+  
+  #menu-bar {
+    display: none;
+  }
+  
+  header label {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+  }
+
+@media screen and (max-width:991px) {
+    header {
+        padding: 20px;
+    }
+  
+    header label {
+        display: initial;
+    }
+  
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: pink;
+        border-top: 1px solid rgba(0, 0, 0, .1);
+        display: none;
+    }
+  
+    header .navbar.show-menu {
+        display: block;
+    }
+  
+    header .navbar ul li {
+        width: 100%;
+    }
+  
+    header .navbar ul li ul {
+        position: relative;
+        width: 100%;
+    }
+  
+    header .navbar ul li ul li {
+        background: pink;
+    }
+  
+    header .navbar ul li ul li ul {
+        width: 100%;
+        left: 0;
+    }
+    #menu-bar:checked ~ .navbar {
+        display: initial;
+    }
+
+    /* submenú "NOSOTROS" */
+    header .navbar .nosotros-sub-menu {
+        display: none;
+        position: relative;
+    }
+  
+    header .navbar .nosotros-sub-menu.show-nosotros {
+        display: block;
+      }
+     header .logo1  {
+          padding-left: 55px ;
+        }
+        
+  
+  }

@@ -24,6 +24,12 @@ const countProducts = document.querySelector('#contador-productos');
 const cartEmpty = document.querySelector('.cart-empty');
 const cartTotal = document.querySelector('.cart-total');
 
+let valores = []
+let totañlTodo = 0
+for ( let i = 0 ; i < valores.length ; i ++) {
+	totañlTodo += valore[1]
+}
+
 productsList.addEventListener('click', e => {
 	if (e.target.classList.contains('btn-add-cart')) {
 		const product = e.target.parentElement;
@@ -33,6 +39,9 @@ productsList.addEventListener('click', e => {
 			title: product.querySelector('h2').textContent,
 			price: product.querySelector('p').textContent,
 		};
+
+		let valorX = parseFloat(infoProduct.price)
+		valores.push(valorX)
 
 		const exits = allProducts.some(
 			product => product.title === infoProduct.title
