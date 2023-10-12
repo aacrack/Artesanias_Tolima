@@ -93,3 +93,31 @@ font-size:4rem;
 margin-left:30%;
 margin-top: 240px;
 }
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .img_Pf img{
+     margin-left: 90px;
+    }
+     .gia{
+     width: 140%;
+    }
+    .headerjeje{
+     padding-right: 40px;
+    }
+    .tt {
+     display: flex;
+     margin: 0 10%;
+    }
+     #titulo2{
+      width:83%;
+     }
+     .headerjiji{
+        width: 140%;
+     }
+    .headerjeje{
+        padding: 51px 0px 0px 0px;
+    
+    }
+    
+    
+    }
+ 
