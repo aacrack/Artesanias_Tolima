@@ -201,9 +201,6 @@ img{
 }
 
 @media screen and (max-width: 1200px) {
-    
-
-    
 }
 
 #titulo2 {
@@ -344,3 +341,27 @@ img{
         
   
   }
+  footer{
+    background-color: rgb(23, 23, 30);
+    padding: 3rem;
+    color:rgb(255, 255, 255);
+    font-size:20px;
+}
+footer section{
+    float: right;
+}
+footer p{
+    margin: 0;
+
+}
+footer a{ 
+    transition: 3s;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 2rem 2rem;
+    
+}
+ footer a:hover{
+    color: blueviolet;
+  
+}

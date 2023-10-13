@@ -93,6 +93,7 @@ font-size:4rem;
 margin-left:30%;
 margin-top: 240px;
 }
+
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
     .img_Pf img{
      margin-left: 90px;
@@ -121,3 +122,25 @@ margin-top: 240px;
     
     }
  
+
+@media screen and (min-width:914px) {
+    
+        .headerjiji{
+         width: 1180px;
+        background-size: cover;
+}
+.headerjeje{
+  margin-left:25%;
+  margin-top: 270px;
+  }
+  .gia{
+    
+    width: 1180px;
+}
+
+.tt {
+    display: flex;
+    margin: 0 10%;
+}
+
+}
