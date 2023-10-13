@@ -97,7 +97,7 @@ margin-top: 240px;
 @media screen and (min-width:914px) {
     
         .headerjiji{
-         width: 1180px;
+         width: 140%;
         background-size: cover;
 }
 .headerjeje{
@@ -106,15 +106,15 @@ margin-top: 240px;
   }
   .gia{
     
-    width: 1180px;
+    width: 140%;
 }
 
 .tt {
     display: flex;
-    margin: 0 10%;
+    margin: 0 18%;
 }
 #letras {
-    margin-left: 70px;
+    margin-left: 155px;
    width: 1050px
   }
   article{
