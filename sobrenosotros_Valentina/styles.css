@@ -93,7 +93,7 @@ font-size:4rem;
 margin-left:30%;
 margin-top: 240px;
 }
-@media screen and (min-width:914px) {
+@media screen and (max-width:991px)  {
     
         .headerjiji{
          width: 1180px;
@@ -112,5 +112,33 @@ margin-top: 240px;
     display: flex;
     margin: 0 10%;
 }
-
+#letras {
+    margin-left: 70px;
+   width: 1050px
+  }
+  article{
+    
+    width: 100%;
+  }
+  .article2{
+    margin-top: 60px;
+  }
+  .article3{
+    margin-top: 100px;
+  }
+  #direcion{
+    margin-top: 400px;
+    width: 90%;
+    margin-left: 100px;
+}
+.img_ubi{
+    margin-left: 100px;
+    width: 500px;
+}
+.img_Pf img{
+    width: 800px;
+    height: 400px;
+    margin-top: 180%;
+    margin-left: -300px;
+  }
 }
