@@ -96,7 +96,7 @@ margin-top: 240px;
 @media screen and (max-width:991px)  {
     
         .headerjiji{
-         width: 1180px;
+         width: 1220px;
         background-size: cover;
 }
 .headerjeje{
@@ -105,7 +105,7 @@ margin-top: 240px;
   }
   .gia{
     
-    width: 1180px;
+    width: 1220px;
 }
 
 .tt {
@@ -138,7 +138,7 @@ margin-top: 240px;
 .img_Pf img{
     width: 800px;
     height: 400px;
-    margin-top: 180%;
+    margin-top: 195%;
     margin-left: -300px;
   }
 }
