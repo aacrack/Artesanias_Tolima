@@ -93,10 +93,11 @@ font-size:4rem;
 margin-left:30%;
 margin-top: 240px;
 }
-@media screen and (max-width:991px)  {
+ 
+@media screen and (min-width:914px) {
     
         .headerjiji{
-         width: 1220px;
+         width: 1180px;
         background-size: cover;
 }
 .headerjeje{
@@ -105,7 +106,7 @@ margin-top: 240px;
   }
   .gia{
     
-    width: 1220px;
+    width: 1180px;
 }
 
 .tt {
