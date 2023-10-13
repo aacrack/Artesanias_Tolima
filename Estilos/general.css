@@ -118,7 +118,7 @@
         display: initial;
     }
 
-    /* submenú "NOSOTROS" */
+    
     header .navbar .nosotros-sub-menu {
         display: none;
         position: relative;
@@ -131,7 +131,20 @@
           padding-left: 55px ;
         }
         
-  
+       footer{
+         width: 1220px;
+        
+      }
+      footer a{
+       font-size: 30px;
+       
+     }
+     footer p{
+      font-size: 30px;
+      
+    }
+      
+      
   }
 footer{
     background-color: rgb(23, 23, 30);
