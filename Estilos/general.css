@@ -16,6 +16,10 @@
     margin-left: 10px;
     color: black;
 }
+ .logo1{
+  margin-left:1px ;
+ }
+  
   header .logo1  img{
     margin-left: -60px;
     position: absolute;
@@ -128,7 +132,7 @@
         display: block;
       }
      header .logo1  {
-          padding-left: 55px ;
+          padding-left: 21px ;
         }
         
        footer{

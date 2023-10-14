@@ -26,11 +26,14 @@ html{
   #mision, #vision, #creo {
     text-align: justify;
   }
+  .logo1{
+    padding-left: 17px;
+  }
   .img_Pf img{
     position: absolute;
-    left: 51%;
+    left: 54%;
     width: 500px;
-    margin-top: -350px;
+    padding-top: 48px;
     z-index: 0;
   }
 p{
@@ -86,7 +89,7 @@ a:hover{
   background-attachment: fixed ;
   position: relative;
 }
-.headerjeje{
+.headerjeje {
   position: absolute;
 color: rgb(255, 255, 255);
 font-size:4rem;
