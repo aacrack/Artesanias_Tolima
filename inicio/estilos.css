@@ -293,3 +293,77 @@ footer a{
     color: blueviolet;
   
 }
+
+
+
+/* @media (min-width:393px){
+  body{
+    background-color: aqua;
+  }
+} */
+@media all and  (max-width:480px)
+
+{
+  body{
+      background-color: black;
+  }
+  .pue{
+      margin-left: 1px;
+  }
+.headerjeje{font-size: 37px;
+  top: -11%;
+  left: -19%;}
+.material-symbols-outlined{
+  margin: 0px 0px 0px 12px;
+  font-size: 20px;
+}
+#titulo2{
+  width:100%;
+}
+#lick{
+  width: auto;
+  font-size: 20px;
+  height: 40px;
+}
+.headerjiji{
+  height: 480px;
+  width: 100%;
+}
+  .Eslogan_img{
+      margin: 0px 0px 0px 71px;
+      padding: 0px 60px 0px 0px;
+
+width: 300px;  
+}
+.Eslogan_b{
+    margin: 56px 39px 0px 72px;
+    font-size: 23px;
+    padding: 0px -10px 2px 1px;
+    position: absolute;
+}
+.avances{
+    margin: 200px 5px 0px 0px;
+    font-size: 22px;
+}
+.pasar_pasar{
+    margin: 40px 0px 0px 9px;
+    width: 356px;
+}
+footer a{
+    font-size: 6px;
+    margin: 0px 0px 0px 0px;
+
+}
+footer p{
+    font-size: 6px;
+    margin: -32px 0px 1px -42px
+}
+.con{
+    margin: -64px 0px 0px -135px;
+    position: absolute;
+}
+.ir{
+    margin: -64px 0px 0px -65px;
+    position: absolute;
+}
+}
