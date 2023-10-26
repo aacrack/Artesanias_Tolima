@@ -33,7 +33,7 @@ html{
     position: absolute;
     left: 51%;
     width: 500px;
-    top: 225%;
+    top: 215%;
     z-index: 0;
   }
 p{
@@ -138,11 +138,15 @@ margin-top: 240px;
     width: 500px;
 }
 .img_Pf img{
-  margin-left: -30%;
-    margin-top: -60px;
-   width: 700px;
-   height: 400px;
-  }
+  
+  left: 51%;
+  width: 500px;
+  top: 105%;
+  
+}
+}
+@media screen and (max-width:551px) {
+
 }
 
 #titulo2 {
