@@ -1,4 +1,4 @@
-/* Globales */
+/* Glozzales */
 *::after,
 *::before,
 *{
@@ -18,13 +18,13 @@ body{
  .titulo{
     text-align: center;
     margin: 30px 0px;
-    color: brown;
+    color: rgb(205, 37, 37);
  }
 
 .icon-cart{
     width: 40px; /* no borrar añadir */
     height: 40px;
-    stroke: #000;
+    stroke: #000000;
 }
 img{
     max-width: 100%;
@@ -132,12 +132,14 @@ img{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+   
 }
 
 .item{
     margin: 10px;
     border-radius: 10px;
     height: 380px;
+    
 }
 
 .item:hover{
@@ -195,13 +197,13 @@ img{
 .headerjeje{
     position: absolute;
   color: rgb(255, 255, 255);
-  font-size:4rem;
+  text-shadow: 2px 2px 4px rgba(202, 85, 85, 0.781);
+  font-size: 50px;;
   margin-left:30%;
   margin-top: 240px;
 }
 
-@media screen and (max-width: 1200px) {
-}
+
 
 #titulo2 {
     position: fixed;
@@ -281,11 +283,41 @@ img{
     cursor: pointer;
     display: none;
   }
+  .slider{
+    width: 300px;
+    height: 190px;
+    overflow: hidden;
+ 
+    border:rgb(165, 6, 6) 2px solid;
+  }
+  .slider ul{
+      display: flex;
+      animation: cambio 20s infinite alternate linear;
+      width: 300%;
+  }
+  .slider li{
+      width: 600px;
+      list-style: none;
+  }
+  .slider img{
+      width:400px;
+      height: 200px;
+  }
 @media screen and (max-width:991px) {
     header {
-        padding: 20px;
+        padding: 10px;
     }
-  
+    .pue{
+        font-size: 20px;
+        position: absolute;
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+    
+    #titulo2 {
+        width: 100%;
+        height: 70px;
+    }  
     header label {
         display: initial;
     }
@@ -334,9 +366,17 @@ img{
     header .navbar .nosotros-sub-menu.show-nosotros {
         display: block;
       }
-     header .logo1  {
-          padding-left: 55px ;
+     header .logo1  { 
+        
+          margin-top: -30px;
+          margin-left: -5px;
         }
+
+    .material-symbols-outlined{
+        font-size: 15px;
+        margin-left: 10px;
+        margin-top: 18px;
+    }  
         
   
   }
@@ -364,3 +404,79 @@ footer a{
     color: blueviolet;
   
 }
+@media screen and (max-width:767px) {
+.headerjiji{
+      width: 100%; 
+      height: 5z00px;
+      background-size: cover;
+}
+.headerjeje{
+    margin-top: 50%;
+    margin-right: 10%;
+}
+.valen{
+    font-size: 20px;
+}
+.info-product button{
+    font-size: 14px;
+   width: 160px;
+   height: 40px;
+   margin-top: -10px;
+   border-radius: 10px;
+   margin-left: -10px;
+ 
+}
+.container-icon{
+   margin-top: 10px;   /* no borrar añadir */
+   margin-left: 250px;
+}
+.item{
+    margin: 5px;
+    border-radius: 10px;
+    height: 380px;
+    width: 160px;
+  
+}
+img{
+    max-width: 100%;
+}
+
+.container-items{
+    
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.slider{
+    width:100%;
+    height: 190px;
+    overflow: hidden;
+    border:rgb(165, 6, 6) 2px solid;
+  }
+  .slider ul{
+      
+      width: 300%;
+  }
+  .slider li{
+      width: 600px;
+      list-style: none;
+  }
+  .slider img{
+      width:600px;
+      height: 200px;
+  }
+}
+
+ 
+
+  @keyframes cambio{
+      0%{margin-left: 0;}
+      20%{margin-left: 0;}
+      
+      25%{margin-left: -100%;}
+      45%{margin-left: -100%;}
+      
+      50%{margin-left: -200%;}
+      70%{margin-left: -200%;}
+      
+     
+  }
