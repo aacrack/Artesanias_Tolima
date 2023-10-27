@@ -72,6 +72,13 @@ color: rgb(103, 30, 30);
       width: 1100px;
       height: 500px;
   }
+
+  iframe{
+    height: 490px;
+    width: 890px;
+    margin-left: 200px;
+  }
+
   @keyframes cambio{
       0%{margin-left: 0;}
       10%{margin-left: 0;}
@@ -142,7 +149,7 @@ color: rgb(103, 30, 30);
  }
   
   header .logo1  img{
-    margin-left: -60px;
+    margin-left: -35px;
     position: absolute;
     height: 60px;
     margin-top: -10px
@@ -237,7 +244,7 @@ footer a{
         top: 100%;
         left: 0;
         right: 0;
-        background: pink;
+        background: rgb(219, 219, 219);
         border-top: 1px solid rgba(0, 0, 0, .1);
         display: none;
     }
@@ -279,10 +286,12 @@ footer a{
      header .logo1  {
           padding-left: 21px ;
         }
-        
-      
-      
-      
+
+    iframe{
+          height: 195px;
+          width: 345px;
+          margin-left: 26px;
+        }
   }
 
 
@@ -300,29 +309,29 @@ footer a{
       background-color: rgb(255, 255, 255);
   }
   .pue{
-      margin-left: 1px;
+      margin-left: 30px;
   }
-.headerjeje{font-size: 37px;
+.headerjeje{
+  font-size: 37px;
   top: -11%;
-  left: -19%;}
-.material-symbols-outlined{
+  left: -19%;
+}
+.material-symbols-outlined {
   margin: 0px 0px 0px 12px;
   font-size: 20px;
 }
-#titulo2{
-  width:100%;
-}
+
 #lick{
   width: auto;
   font-size: 20px;
   height: 40px;
 }
 .headerjiji{
-  height: 480px;
-  width: 100%;
+  height: 340px;
+  width: 107%;
 }
   .Eslogan_img{
-      margin: 0px 0px 0px 71px;
+      margin: -31px 0px -40px 0px;
       padding: 0px 60px 0px 0px;
       height: 250px;
       width: 350px;  
@@ -335,10 +344,10 @@ footer a{
     width: 80%;
 }
 .hrtt{
-  margin-top: 110px;
+  margin-top: 15px;
 }
 .avances{
-    margin: 200px 5px 0px 0px;
+    margin: 30px -25px 0px 0px;
     font-size: 22px;
 }
 .pasar_pasar{
@@ -347,9 +356,17 @@ footer a{
     height: 200px;
 }
 .pasar_pasar img{
-  width: 350px;
+  width: 470px;
   height: 200px;
 }
+
+iframe{
+  height: 195px;
+  width: 345px;
+  margin-left: 26px;
+  margin-top: -25px;
+}
+
 .con{
     margin: -64px 0px 0px -135px;
     position: absolute;
@@ -359,8 +376,8 @@ footer a{
     position: absolute;
 }
 footer{
-  margin-top: 20%;
   width: 100%;
+  margin-top: 20%;
   position: relative;
 }
 footer a{
@@ -371,5 +388,58 @@ footer p{
   text-align: center;
 font-size: 10px;
 
+}
+}
+@media all and  (min-width:600px){
+
+  .headerjeje{
+    font-size: 37px;
+    top: -11%;
+    left: -19%;
+  }
+  .headerjiji{
+    width: 100%;
+
+  }
+  header .navbar ul li ul li ul {
+    width: 1000%;
+    left: 0;
+}
+#titulo2 {
+  position: fixed;
+  width: 60%;
+  padding: 85px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  height: 80px;
+ 
+  width: 5 0%;
+}
+.pue{
+  font-size: 65px;
+  margin-left: 50px;
+}
+header .logo1  img{
+  margin-left: -105px;
+  position: absolute;
+  height: 145px;
+  margin-top: -35px
+}
+.material-symbols-outlined{
+  margin: 0px 0px 0px 12px;
+  font-size: 20px;
+}
+.pasar_pasar{
+  margin-left: 200px;
+  width: 900px;
+  height: 500px;
+  overflow: hidden;
+}
+.pasar_pasar img{
+    width: 1100px;
+    height: 500px;
+    margin-left: 270px;
 }
 }
