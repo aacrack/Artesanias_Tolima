@@ -32,8 +32,8 @@ img{
 .container-icon{
     z-index: 3;
     border:solid 3px rgba(255, 255, 255, 0.234);
-    margin-top: -10px;   /* no borrar añadir */
-   margin-left: 1135px;
+    margin-top: 10px;   /* no borrar añadir */
+   margin-left: 1185px;
     position: fixed;
 }
 
@@ -57,7 +57,7 @@ img{
     top: 50px;
     right: 0;
 
-    background-color: #fff;
+    background-color: #ffffff;
     width: 400px;
     z-index: 1;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
@@ -188,19 +188,18 @@ img{
 }
 .headerjiji{
     background-image: url(img2/hola.jpg);
-    height: 600px;
+    background-repeat: no-repeat;
     background-size: cover;
-  opacity: 90%;
-  background-attachment: fixed ;
-  position: relative;
+    backdrop-filter: blur(50px);
+    height: 600px; 
 }
 .headerjeje{
     position: absolute;
   color: rgb(255, 255, 255);
-  text-shadow: 2px 2px 4px rgba(202, 85, 85, 0.781);
+  text-shadow: 10px 10px 17px rgba(255, 0, 0, 0.781);
   font-size: 50px;;
-  margin-left:30%;
-  margin-top: 240px;
+  margin-left:37%;
+  margin-top: 250px;
 }
 
 
@@ -327,15 +326,24 @@ img{
         top: 100%;
         left: 0;
         right: 0;
-        background: pink;
-        border-top: 1px solid rgba(0, 0, 0, .1);
+        background:rgb(179, 111, 9);
+        border-top: 1px solid rgba(0, 0, 0, 0);
         display: none;
+        height: 200px;
+        
+        
     }
   
     header .navbar.show-menu {
         display: block;
     }
-  
+    header .navbar ul li a {
+        font-size: 18px;
+        padding: 20px;
+        color: #fffdfd;
+        display: block;
+        border-top: 2px solid black;
+      }
     header .navbar ul li {
         width: 100%;
     }
@@ -346,7 +354,7 @@ img{
     }
   
     header .navbar ul li ul li {
-        background: pink;
+        background: rgb(56, 55, 56);
     }
   
     header .navbar ul li ul li ul {
@@ -407,16 +415,14 @@ footer a{
 @media screen and (max-width:767px) {
 .headerjiji{
       width: 100%; 
-      height: 5z00px;
+      height: 500px;
       background-size: cover;
 }
-.headerjeje{
-    margin-top: 50%;
-    margin-right: 10%;
-}
+
 .valen{
     font-size: 20px;
 }
+
 .info-product button{
     font-size: 14px;
    width: 160px;
@@ -441,10 +447,33 @@ img{
     max-width: 100%;
 }
 
+footer  p{
+    font-size: 17px;
+    text-align: center;
+    
+}
+footer section a{
+font-size: 0px
+
+
+}
+.cart-product{
+    margin-left: 00px;
+}
+.container-cart-products{
+ 
+    right: -70px;
+}
 .container-items{
     
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+}
+.headerjeje{
+  font-size: 35px;
+    margin-top: 53%;
+    margin-left: 2%;
+    text-align: center;
 }
 .slider{
     width:100%;
@@ -466,7 +495,86 @@ img{
   }
 }
 
- 
+@media (min-width:768px)    {
+    
+    .slider{
+        width:100%;
+        height: 190px;
+  
+      }
+      .slider ul{
+      
+        width: 300%;
+    }
+    
+  
+    .container-icon{
+    
+        margin-top: 10px;   /* no borrar añadir */
+       margin-left: 565px;
+        
+    }
+    
+    .item{
+        height: 380px;
+        width: 220px;
+      
+    }
+    footer  p{
+        font-size: 20px;
+        text-align: center;
+        
+  }
+  footer section a{
+    font-size: 0px
+
+
+  }
+    .container-items{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+    .headerjeje{
+
+        margin-top: 37%;
+        margin-left: 23%;
+    }
+  }
+  @media screen and (min-width:1280px){
+            
+    .slider{
+        width:100%;
+        height: 190px;
+  
+      }
+      .slider ul{
+      
+        width: 300%;
+    }
+    .container-icon{
+    
+        margin-top: 10px;   /* no borrar añadir */
+       margin-left: 1165px;
+        
+    }
+    .headerjeje{
+
+        margin-top: 22%;
+        margin-left:32%;
+    }
+    
+    .item{
+        height: 380px;
+        width: 300px;
+      
+    }
+    
+    .container-items{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }  
+  
+  }
 
   @keyframes cambio{
       0%{margin-left: 0;}

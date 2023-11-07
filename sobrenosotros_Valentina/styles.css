@@ -3,9 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-html{
-    font-family: Arial, sans-serif;
-}
+
 #direcion{
     width: 50%;
     margin: 0 auto;
@@ -13,7 +11,8 @@ html{
 .direccion {
     text-align: center;
     font-family: Arial, sans-serif;
-}  
+} 
+
 #letras {
     padding: 50px;
     margin-left: 130px;
@@ -22,7 +21,9 @@ html{
   }
   article{
     width: 50%;
+    text-align: justify;
   }
+
   #mision, #vision, #creo {
     text-align: justify;
   }
@@ -30,10 +31,10 @@ html{
     padding-left: 17px;
   }
   .img_Pf img{
-    position: absolute;
-    left: 51%;
+    position: relative;
     width: 500px;
-    top: 215%;
+    margin-top: -600px;
+    margin-left: 250px;
     z-index: 0;
   }
 p{
@@ -42,7 +43,7 @@ p{
 a{
     color: #fffdfd;
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+   
     text-decoration: none;
 }
 a:hover{
@@ -54,6 +55,7 @@ a:hover{
     height: 70px;
     background-color: rgba(171, 110, 35, 0.769);
     text-align:center;
+    width: 100%;
 }
 .gia a {
     border-right: 3px solid rgb(255, 255, 255) ;
@@ -76,7 +78,7 @@ a:hover{
     margin: 20px;
     list-style: none;
     display: flex;
-    margin-left: 700px;
+    margin-left: 800px;
 }
 .contactos{
     height: 50px;
@@ -85,74 +87,18 @@ a:hover{
     background-image: url(img/fondo.jpeg);
     height: 600px;
     background-size: cover;
-  opacity: 90%;
+  
   background-attachment: fixed ;
   position: relative;
 }
 .headerjeje{
   position: absolute;
 color: rgb(255, 255, 255);
-font-size:4rem;
-margin-left:30%;
+font-size:50px;
+margin-left:20%;
 margin-top: 240px;
+text-shadow: 2px 2px 4px rgba(202, 85, 85, 0.781);
 }
- 
-@media screen and (max-width:991px) {
-    
-        .headerjiji{
-         width: 140%;
-        height: 900px;
-        }
-.headerjeje{
-  margin-left:27%;
-  margin-top: 460px;
-  }
-  .gia{
-    width: 140%;
-    height: 100px;
-    font-size: 20px;
-}
-.comienzo{
-   margin-top: 70px;
-}
-.tt {
-    display: flex;
-    margin-top: 10px;
-}
-#letras {
-    margin-left: 155px;
-   width: 1050px
-   
-  }
-  article{
-    font-size: 40px;
-    width: 100%;
-  }
-  .article2{
-    margin-top: 60px;
-  }
-  .article3{
-    margin-top: 100px;
-  }
-  #direcion{
-    margin-top: 400px;
-    width: 90%;
-    margin-left: 100px;
-}
-.img_ubi{
-    margin-left: 100px;
-    width: 500px;
-}
-.img_Pf img{
-  
-  left: 30%;
-  width: 700px;
-  top: 338%;
-  
-}
-
-}
-
 #titulo2 {
   position: fixed;
  
@@ -183,10 +129,12 @@ header .logo1  img{
 }
 header .navbar ul {
   list-style: none;
+
 }
 header .navbar ul li {
   position: relative;
   float: left;
+  
 }
 header .navbar ul li a {
   font-size: 20px;
@@ -233,6 +181,121 @@ header label {
   display: none;
 }
 
+
+
+footer{
+  background-color: rgb(23, 23, 30);
+  padding: 3rem;
+  color:rgb(255, 255, 255);
+  font-size:20px;
+}
+footer section{
+  float: right;
+}
+footer p{
+  margin: 0;
+
+}
+footer a{ 
+  transition: 3s;
+  color: aliceblue;
+  text-decoration: none;
+  padding: 2rem 2rem;
+  
+}
+footer a:hover{
+  color: blueviolet;
+
+}
+
+
+
+
+
+/* responsive tablet */
+@media (min-width:768px)    {
+  .headerjiji{
+    width: 100%;
+}
+.headerjeje{
+ margin-left: 190px;
+ top: 70px;
+}
+.contactos ul{
+  position: absolute;
+ margin-left: 490px;
+ }
+ .gia{
+    height: 70px;
+    width: 100%;
+}
+
+.tt {
+    margin: 0 6%;
+}
+.img_Pf img{
+  width: 500px;
+  height: 270px;
+  top:280px;
+  left: -210px;
+}
+ article{
+    width: 90%;
+    padding-left: 50px;
+  }
+  #letras {
+    
+    margin-left: 90px;
+    
+  }
+  #direcion{
+    width: 90%;
+    margin-top: 300px;
+}
+}
+@media screen and (min-width:1280px){
+  
+  .headerjiji{
+    width: 100%;
+}
+.headerjeje{
+ margin-left: 400px;
+ top: 40px;
+}
+.contactos ul{
+  position: absolute;
+ margin-left: 790px;
+ }
+ .gia{
+    height: 70px;
+    width: 100%;
+}
+
+.tt {
+    margin: 0 19%;
+}
+.img_Pf img{
+  width: 500px;
+  height: 300px;
+  top: 215%;
+  left: 52%;
+}
+ article{
+    width: 50%;
+    padding-left: 20px;
+  }
+  #letras {
+    
+    margin-left: 140px;
+    
+  }
+  
+  #direcion{
+    text-align: center;
+    margin-top: 0px;
+}
+}
+/* responsive menu */
 @media screen and (max-width:991px) {
   header {
       
@@ -250,19 +313,19 @@ header label {
       top: 100%;
       left: 0;
       right: 0;
-      background: pink;
+      background:rgb(179, 111, 9);
       border-top: 1px solid rgba(0, 0, 0, 0);
       display: none;
-      height: 400px;
+      height: 320px;
       
       
   }
   header .navbar ul li a {
     font-size: 40px;
     padding: 30px;
-    color: #333;
+    color: #fffdfd;
     display: block;
- 
+    border-top: 3px solid black;
   }
   header .navbar.show-menu {
       display: block;
@@ -324,45 +387,6 @@ header label {
       header .logo1 h1 {
         font-size: 40px;
         margin-left: 70px;
-      }
-      
-     footer{
-      width: 140%;
-      height: 300px ;
-    }
-    footer a{
-     font-size: 40px;
-   
-     padding-top: 90px;
-   }
-   footer p{
-    font-size: 35px;
-    padding-top: 90px;
-  }
-    
-    
+      }   
 }
-footer{
-  background-color: rgb(23, 23, 30);
-  padding: 3rem;
-  color:rgb(255, 255, 255);
-  font-size:20px;
-}
-footer section{
-  float: right;
-}
-footer p{
-  margin: 0;
 
-}
-footer a{ 
-  transition: 3s;
-  color: aliceblue;
-  text-decoration: none;
-  padding: 2rem 2rem;
-  
-}
-footer a:hover{
-  color: blueviolet;
-
-}
