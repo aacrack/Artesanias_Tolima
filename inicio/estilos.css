@@ -6,26 +6,18 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html{
+  font-family: Arial, sans-serif;
+}
 body{
     font-family: 'Lato';
     color: #333;
-    background-image: url(img1/fondo2.jpg);
+   background-color:beige;
     background-size: cover;
     background-attachment: fixed ;
     position: relative;
 }
 
-
-
-
-a:hover{
-    background-color: rgb(72, 83, 83);
-    box-shadow: 0px 0px 400px 86px rgb(82, 95, 91);
-    -webkit-box-shadow:  0px 0px 400px 86px rgb(82, 95, 91);
-    -moz-box-shadow: 0px 0px 400px 86px rgb(82, 95, 91); 
-    text-decoration: underline white;
-}
 header a {
   text-decoration: none ;
 }
@@ -105,26 +97,31 @@ color: rgb(103, 30, 30);
   }
 .headerjiji{
       background-image: url(img1/fondo.jpeg);
+  
       height: 600px;
       background-size: cover;
-    opacity: 90%;
+    
     background-attachment: fixed ;
     position: relative;
 }
 .headerjeje{
     position: absolute;
   color: rgb(255, 255, 255);
-  font-size:4rem;
-  margin-left:30%;
-  margin-top: 240px;
+  font-size:50PX;
+  margin-left:28%;
+  margin-top: 280px;
+  text-shadow: 2px 2px 4px rgba(202, 85, 85, 0.781);
 }
 
 
 
 .logo1{
-    padding-left: 20px;
+    padding-left: -30px;
 }
 
+.logo1 h1{
+  padding-left: 40px;
+}
 
 #titulo2 {
     position: fixed;
@@ -230,91 +227,177 @@ footer a{
   
 }
 
+
+
+/* menu responsive */
 @media screen and (max-width:991px) {
-    header {
-        padding: 20px;
-    }
+  header {
+      padding: 10px;
+  }
+  .pue{
+      font-size: 20px;
+      position: absolute;
+      margin-top: 10px;
+      margin-left: 50px;
+  }
   
-    header label {
-        display: initial;
-    }
-  
-    header .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: rgb(219, 219, 219);
-        border-top: 1px solid rgba(0, 0, 0, .1);
-        display: none;
-    }
-  
-    header .navbar.show-menu {
-        display: block;
-    }
-  
-    header .navbar ul li {
-        width: 100%;
-    }
-  
-    header .navbar ul li ul {
-        position: relative;
-        width: 100%;
-    }
-  
-    header .navbar ul li ul li {
-        background: pink;
-    }
-  
-    header .navbar ul li ul li ul {
-        width: 100%;
-        left: 0;
-    }
-    #menu-bar:checked ~ .navbar {
-        display: initial;
-    }
+  #titulo2 {
+      width: 100%;
+      height: 70px;
+  }  
+  header label {
+      display: initial;
+  }
 
-    
-    header .navbar .nosotros-sub-menu {
-        display: none;
-        position: relative;
+  header .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background:rgb(179, 111, 9);
+      border-top: 1px solid rgba(0, 0, 0, 0);
+      display: none;
+      height: 200px;
+      
+      
+  }
+
+  header .navbar.show-menu {
+      display: block;
+  }
+  header .navbar ul li a {
+      font-size: 18px;
+      padding: 20px;
+      color: #fffdfd;
+      display: block;
+      border-top: 2px solid black;
     }
-  
-    header .navbar .nosotros-sub-menu.show-nosotros {
-        display: block;
+  header .navbar ul li {
+      width: 100%;
+  }
+
+  header .navbar ul li ul {
+      position: relative;
+      width: 100%;
+  }
+
+  header .navbar ul li ul li {
+      background: rgb(56, 55, 56);
+  }
+
+  header .navbar ul li ul li ul {
+      width: 100%;
+      left: 0;
+  }
+  #menu-bar:checked ~ .navbar {
+      display: initial;
+  }
+
+  /* submenú "NOSOTROS" */
+  header .navbar .nosotros-sub-menu {
+      display: none;
+      position: relative;
+  }
+
+  header .navbar .nosotros-sub-menu.show-nosotros {
+      display: block;
+    }
+   header .logo1  { 
+      
+        margin-top: -40px;
+        margin-left: 20px;
       }
-     header .logo1  {
-          padding-left: 21px ;
-        }
 
-    iframe{
-          height: 195px;
-          width: 345px;
-          margin-left: 26px;
-        }
+  .material-symbols-outlined{
+      font-size: 15px;
+      margin-left: 10px;
+      margin-top: 18px;
+  }  
+}
+
+
+/* responsive tablet */
+  @media (min-width:768px) and (max-width:820px)  {
+    .pasar_pasar{
+      margin-left: 80px;
+      width: 80%;
+      height: 330px;
+  }
+  .pasar_pasar img{
+    width: 640px;
+    height: 400px;
+  }
+  .avances{
+    font-size: 20px;
+  }
+  .Eslogan_img{
+   margin-top: -30px;
+   margin-left: 250px;
+    height: 300px;
+    width: 300px;  
+   
+}
+footer{
+  width: 100%;
+  margin-top: 5%;
+  
+}
+footer a{
+  font-size: 1px;
+  position: fixed;
+  
+}
+footer p{
+  text-align: center;
+font-size: 15px;
+
+}
+.Eslogan_b{
+  margin: 20px 0px 0px 52px;
+  font-size: 23px;
+  text-align: center;
+  margin-left: 155px;
+  width: 60%;
+}
+.headerjiji{
+  height: 500px;
+  width: 100%;
+}
+.headerjeje{
+  font-size: 37px;
+  top: -5%;
+  left:-5%;
+}iframe{
+  height: 355px;
+  width: 655px;
+  margin-left: 70px;
+  margin-top: -25px;
+}
   }
 
 
 
-
-/* @media (min-width:393px){
-  body{
-    background-color: aqua;
-  }
-} */
-@media all and  (max-width:480px)
+  /* responsive celular */
+@media (min-width:330px) and  (max-width:480px)
 
 {
   body{
-      background-color: rgb(255, 255, 255);
+      background-color: #f8f8d4ce;
   }
   .pue{
       margin-left: 30px;
   }
 .headerjeje{
-  font-size: 37px;
-  top: -11%;
-  left: -19%;
+  font-size: 27px;
+  top: -80px;
+  left: -17%;
+}
+.logo1 h1{
+      font-size: 22px;
+      margin-left: -10px;
+}
+.logo1 img{
+    margin: -10px;
 }
 .material-symbols-outlined {
   margin: 0px 0px 0px 12px;
@@ -327,34 +410,35 @@ footer a{
   height: 40px;
 }
 .headerjiji{
-  height: 340px;
-  width: 107%;
+  height: 330px;
+  width: 100%;
 }
   .Eslogan_img{
       margin: -31px 0px -40px 0px;
       padding: 0px 60px 0px 0px;
       height: 250px;
-      width: 350px;  
-      margin-left: 50px;
+      width: 305px;  
+      margin-left: 70px;
 }
 .Eslogan_b{
-    margin: 56px 0px 0px 52px;
+    margin: 56px 0px 0px 72px;
     font-size: 23px;
-   
-    width: 80%;
+
 }
 .hrtt{
   margin-top: 15px;
 }
 .avances{
-    margin: 30px -25px 0px 0px;
+    margin: 10px -25px 0px 50px;
     font-size: 22px;
+    width:300px;
 }
 .pasar_pasar{
-    margin-left: 25px;
-    width: 90%;
+    margin-left: 28px;
+    width: 85%;
     height: 200px;
 }
+
 .pasar_pasar img{
   width: 470px;
   height: 200px;
@@ -362,8 +446,8 @@ footer a{
 
 iframe{
   height: 195px;
-  width: 345px;
-  margin-left: 26px;
+  width: 315px;
+  margin-left: 40px;
   margin-top: -25px;
 }
 
@@ -375,18 +459,27 @@ iframe{
     margin: -64px 0px 0px -65px;
     position: absolute;
 }
+.avances{
+  font-size: 20px;
+}
 footer{
-  width: 100%;
+  width: 150%;
   margin-top: 20%;
-  position: relative;
+  
 }
 footer a{
+  font-size: 1px;
   position: fixed;
-
+  
 }
 footer p{
   text-align: center;
 font-size: 10px;
 
 }
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>> f43676aa3a3c75e8da0bd9c2a3eb26d30bd1c9b5
