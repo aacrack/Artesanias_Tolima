@@ -2,8 +2,13 @@ from django.shortcuts import render
 from django.http import HttpResponse,JsonResponse
 from django.views.decorators.csrf import csrf_exempt    
 import json
-from api.models import Register
-from api.models import Registro_Producto
+# from api.models import Register
+# from api.models import Registro_Producto
+from rest_framework.viewsets import ModelViewSet
+from .serializer import productoserializer
+from .models import Register_Productos
+
+
 
 
 # Create your views here.
@@ -24,17 +29,17 @@ def saludar(request):
 def registro(request):
     datos_registro=json.loads(request.body)
         
-    Register.objects.create (
-        nombre_c=datos_registro["nombre_c"],
-        correo_electronico=datos_registro["correo_electronico"],
-        usuario=datos_registro["usuario"],
-        password=datos_registro["password"], 
+    # Register.objects.create (
+    #     nombre_c=datos_registro["nombre_c"],
+    #     correo_electronico=datos_registro["correo_electronico"],
+    #     usuario=datos_registro["usuario"],
+    #     password=datos_registro["password"], 
          
           
         
 
-     )
-    return JsonResponse({"Mensaje": "Sus datos se han registrado correctamente"})
+    #  )
+    # return JsonResponse({"Mensaje": "Sus datos se han registrado correctamente"})
 
 # def registro(request,id):
     
@@ -55,35 +60,46 @@ def registro(request):
 #      return HttpResponse(usuario.nombre_c)
 
     
-def traer_personas(request):
-    register = Register.objects.all()
+# def traer_personas(request):
+#     register = Register.objects.all()
 
-    lista_persona= []
+#     lista_persona= []
 
-    for i in register:
+#     for i in register:
 
-        lista_persona.append({
+#         lista_persona.append({
 
-            "id":i.id,
-            "nombre":i.nombre_c,
-
-
-        })
+#             "id":i.id,
+#             "nombre":i.nombre_c,
 
 
-@csrf_exempt
-def registro_p(request):
-    producto_registro=json.loads(request.body)
+#         })
+
+
+# @csrf_exempt
+# def registro_p(request):
+#     producto_registro=json.loads(request.body)
         
-    Registro_Producto.objects.create (
-        cantidad=producto_registro["cantidad"],
-        producto=producto_registro["producto"],
-        descripcion=producto_registro["descripcion"],
-        precio_inversion=producto_registro["precio_inversion"], 
-        precio_venta=producto_registro["precio_venta"]
+#     Registro_Producto.objects.create (
+#         cantidad=producto_registro["cantidad"],
+#         producto=producto_registro["producto"],
+#         descripcion=producto_registro["descripcion"],
+#         precio_inversion=producto_registro["precio_inversion"], 
+#         precio_venta=producto_registro["precio_venta"]
         
           
         
 
-     )
-    return JsonResponse({"Mensaje": "Sus datos se han registrado correctamente"})
+#      )
+#     return JsonResponse({"Mensaje": "Sus datos se han registrado correctamente"})
+
+
+
+
+
+class productoViewset(ModelViewSet):
+
+    queryset = Register_Productos.objects.all()
+    serializer_class = productoserializer
+
+    

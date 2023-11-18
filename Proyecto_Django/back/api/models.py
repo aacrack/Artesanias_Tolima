@@ -3,12 +3,12 @@ from django.db import models
 # Create your models here.
 
 #Register
-class  Register(models.Model):
-    nombre_c=models.CharField(max_length=50,null=False)
-    correo_electronico=models.CharField(max_length=50,null=False)
-    usuario=models.CharField(max_length=50,null=False)
-    password=models.CharField(max_length=50,null=False)
-    img=models.ImageField()
+# class  Register(models.Model):
+#     nombre_c=models.CharField(max_length=50,null=False)
+#     correo_electronico=models.CharField(max_length=50,null=False)
+#     usuario=models.CharField(max_length=50,null=False)
+#     password=models.CharField(max_length=50,null=False)
+#     img=models.ImageField()
   
 
 # class persona(models.Models):
@@ -20,8 +20,17 @@ class  Register(models.Model):
 #     fecha_creacion=models.DateField(auto_now_add=True)
 
     
-class Registro_Producto(models.Model):
-    cantidad=models.CharField(max_length=50,null=False)
+# class Registro_Producto(models.Model):
+#     cantidad=models.CharField(max_length=50,null=False)
+#     producto=models.CharField(max_length=50,null=False)
+#     descripcion=models.CharField(max_length=100,null=False)
+#     precio_inversion=models.IntegerField(null=False)
+#     precio_venta=models.IntegerField(null=False)
+
+
+
+class Register_Productos(models.Model):
+    cantidad=models.IntegerField(null=False)
     producto=models.CharField(max_length=50,null=False)
     descripcion=models.CharField(max_length=100,null=False)
     precio_inversion=models.IntegerField(null=False)

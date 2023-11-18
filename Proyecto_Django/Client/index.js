@@ -31,3 +31,23 @@ boton.addEventListener("click", ejecutarSaludo())
 // }
 
 ejecutarsaludo()
+
+
+
+
+function enviardatos(){
+    fetch("http://localhost:8000/api/Register_productos/",{
+        
+        method: 'POST',
+        body: JSON.stringify({
+
+            cantidad: 1,
+            producto: "Manillas",
+            descripcion: "Bueno",
+            precio_inversion: 1000,
+            precio_venta: 1200
+        }),
+        headers: {"content-type": "application/json"}
+
+})
+}
