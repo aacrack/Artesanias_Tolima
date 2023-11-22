@@ -32,6 +32,6 @@ from django.db import models
 class Register_Productos(models.Model):
     cantidad=models.IntegerField(null=False)
     producto=models.CharField(max_length=50,null=False)
-    descripcion=models.CharField(max_length=100,null=False)
+    descripcion=models.CharField(max_length=1000,null=False)
     precio_inversion=models.IntegerField(null=False)
     precio_venta=models.IntegerField(null=False)

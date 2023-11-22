@@ -3,7 +3,7 @@ from django.http import HttpResponse,JsonResponse
 from django.views.decorators.csrf import csrf_exempt    
 import json
 # from api.models import Register
-# from api.models import Registro_Producto
+from api.models import Register_Productos
 from rest_framework.viewsets import ModelViewSet
 from .serializer import productoserializer
 from .models import Register_Productos
@@ -76,22 +76,22 @@ def registro(request):
 #         })
 
 
-# @csrf_exempt
-# def registro_p(request):
-#     producto_registro=json.loads(request.body)
+@csrf_exempt
+def registro_p(request):
+    producto_registro=json.loads(request.body)
         
-#     Registro_Producto.objects.create (
-#         cantidad=producto_registro["cantidad"],
-#         producto=producto_registro["producto"],
-#         descripcion=producto_registro["descripcion"],
-#         precio_inversion=producto_registro["precio_inversion"], 
-#         precio_venta=producto_registro["precio_venta"]
+    Register_Productos.objects.create (
+        cantidad=producto_registro["cantidad"],
+        producto=producto_registro["producto"],
+        descripcion=producto_registro["descripcion"],
+        precio_inversion=producto_registro["precio_inversion"], 
+        precio_venta=producto_registro["precio_venta"]
         
           
         
 
-#      )
-#     return JsonResponse({"Mensaje": "Sus datos se han registrado correctamente"})
+     )
+    return JsonResponse({"Mensaje": "Sus datos se han registrado correctamente"})
 
 
 
