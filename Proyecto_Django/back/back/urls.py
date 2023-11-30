@@ -23,9 +23,12 @@ from api.router import router
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('saludar/',views.saludar,name="Esta funcion va a saludar"),
+    path('saludar/',views.saludar,name="Esta funcion va a saludar"),
     # path('registro/<int:id>/',views.registro, name="Esta funcion va a registrar los datos del usuario"),
     path('api/',include(router.urls)),   
-    path('registro/',views.registro, name="Esta funcion va a registrar los datos del usuario")
+    path('registro/',views.registro_p, name="Esta funcion va a registrar los datos del usuario"),
+    path('eliminar/<int:id>/',views.eliminar, name="Esta funcion va a registrar los datos del usuario"),
+   
+    path('registro_p/',views.registro, name="Esta funcion va a registrar los datos del usuario")
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

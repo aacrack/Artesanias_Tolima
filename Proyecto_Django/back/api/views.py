@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse,JsonResponse
 from django.views.decorators.csrf import csrf_exempt    
 import json
-# from api.models import Register
+from api.models import Register
 from api.models import Register_Productos
 from rest_framework.viewsets import ModelViewSet
 from .serializer import productoserializer
@@ -15,7 +15,7 @@ from .models import Register_Productos
 @csrf_exempt
 def saludar(request):
 
-    # # datos_persona=json.loads(request.body)
+    # datos_persona=json.loads(request.body)
 
     # print(datos_persona[)
    
@@ -26,25 +26,26 @@ def saludar(request):
 
 # Register
 @csrf_exempt
-def registro(request):
-    datos_registro=json.loads(request.body)
-        
-    # Register.objects.create (
-    #     nombre_c=datos_registro["nombre_c"],
-    #     correo_electronico=datos_registro["correo_electronico"],
-    #     usuario=datos_registro["usuario"],
-    #     password=datos_registro["password"], 
+def registro_p(request):
+    datos_registro = json.loads(request.body)
+    
+    Register.objects.create (
+        nombre_c=datos_registro["nombre_c"],
+        correo_electronico=datos_registro["correo_electronico"],
+        usuario=datos_registro["usuario"],
+        password=datos_registro["password"], 
          
           
         
 
-    #  )
-    # return JsonResponse({"Mensaje": "Sus datos se han registrado correctamente"})
+     )
+    return JsonResponse({"Mensaje": "Sus datos se han registrado correctamente"})
 
-# def registro(request,id):
+def eliminar(request,id):
     
-#      usuario=Register.objects.get(id = id)
-#      usuario.delete()
+     usuario=Register.objects.get(id = id)
+     usuario.delete()
+     return HttpResponse("hola")
 #      usuario.nombre_c="Brayan"
 #      usuario.correo_electronico="Brayan@gmail.com"
 #      usuario.save()
@@ -77,7 +78,7 @@ def registro(request):
 
 
 @csrf_exempt
-def registro_p(request):
+def registro(request):
     producto_registro=json.loads(request.body)
         
     Register_Productos.objects.create (
@@ -102,4 +103,138 @@ class productoViewset(ModelViewSet):
     queryset = Register_Productos.objects.all()
     serializer_class = productoserializer
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
     
