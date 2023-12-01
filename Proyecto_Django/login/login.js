@@ -71,7 +71,7 @@ const password = document.querySelector("#password")
 const boton_r = document.querySelector("#boton_r")
 
 boton_r.addEventListener("click", () => {
-    fetch("http://127.0.0.1:8000/registro/", {
+    fetch("http://127.0.0.1:8000/registro_p/", {
         method: 'POST',
         body: JSON.stringify({
             nombre_c: nombre_c.value,
