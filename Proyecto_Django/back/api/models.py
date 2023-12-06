@@ -36,7 +36,8 @@ class Register_Productos(models.Model):
     precio_inversion = models.IntegerField(null=False)
     precio_venta = models.IntegerField(null=False)
     foto = models.ImageField(upload_to='animales/', default="animales/perro.png")
-
+    img = models.ImageField(upload_to='animales/', default="animales/perro.png")
+    img1 = models.ImageField(upload_to='animales/', default="animales/perro.png")
 
 
 
