@@ -122,14 +122,15 @@ const crearHTML = async () => {
         cuerpo.innerHTML += `
       
         <table >
-        <td style=" text-align: center; border: #333 solid 2px;">${i.cantidad}</td>
-        <td style=" text-align: center; border: #333 solid 2px;">${i.producto}</td>
-        <td style=" text-align: center; border: #333 solid 2px;">${i.descripcion}</td>
-        <td style=" text-align: center; border: #333 solid 2px;">${i.precio_inversion}</td>
-        <td style=" text-align: center; border: #333 solid 2px;">${i.precio_venta}</td>
+        <td class="tabla2"  style="  text-align: center; border: #333 solid 2px;">${i.cantidad}</td>
+        <td class="tabla2"  style=" text-align: center; border: #333 solid 2px;">${i.producto}</td>
+        <td  class="tabla2" style=" text-align: center; border: #333 solid 2px;">${i.descripcion}</td>
+        <td class="tabla2" style=" text-align: center; border: #333 solid 2px;">${i.precio_inversion}</td>
+        <td class="tabla2"  style=" text-align: center; border: #333 solid 2px;">${i.precio_venta}</td>
 
-        <td style=" text-align: center; border: #333 solid 2px;"> <img class=img" src="${i.foto}" width="100px" height="100px"></td>
-        <button class="cajita-btn-delete" id_pais="${i.id}"> X </button>
+        <td class="tabla2"  style=" text-align: center; border: #333 solid 2px;"> <img class=img" src="${i.foto}" width="100px" height="100px"></td>
+        <td  class="tabla2" style=" text-align: center; border: #333 solid 2px;"><button class="cajita-btn-delete" id_pais="${i.id}"> Eliminar </button></td>
+        <td class="tabla2" class="tabla2"  style=" text-align: center; border: #333 solid 2px;"><button "> Editar </button></td>
         </table>
         
                       
@@ -157,4 +158,13 @@ function Delete() {
 traerDatos()
 crearHTML()
 
+
+function mostrarTabla() {
+    var tabla = document.getElementById("tabla");
+    if (tabla.style.display === "none") {
+        tabla.style.display = "block";
+    } else {
+        tabla.style.display = "none";
+    }
+}
 

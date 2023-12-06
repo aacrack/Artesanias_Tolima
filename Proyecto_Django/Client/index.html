@@ -4,13 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href=index.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   
 </head>
 <body>
-    <main id="cuerpo"></main>
-   
-   
+    <div id="todo" class="container mt-12 col-md-12">
+        <div class="container col-md-12" id="titulo2">
+		
+            <div class="logo1">
+              <img src="img/logo-transformed.png" alt="logo">
+              <h1 class="pue"> Pueblito Tolimense</h1>
+          </div>
 
+              <nav class="navbar">
+                  <ul>
+                    <li><a href="http://127.0.0.1:5501/inicio/">Inicio</a></li>
+                    <li> <a href="http://127.0.0.1:5501/tienda%20onlinea/tienda.html">Productos</a></li>
+                    <li><a href="http://127.0.0.1:5501/sobrenosotros_Valentina/spbrenosotros.html">Sobre Nosotros</a></li>
+                   
+                  </ul>
+              </nav>
+            </div>
+ 
+    <br><br>
+        <div class="row">
+            <div class="col-md-6">
+                
+                <a class="Add" href="#" onclick="mostrarTabla()">AÑADIR PRODUCTO</a>
+
+<br><br>
+                <form id="tabla" style="display:none;">
+                    <h4 >Cantidad:</h4>
+                    <input class="form-control cantidad" type="number">
+<br>
+                    <h4>Producto:</h4>
+                    <input class="form-control producto" type="text">
+<br>
+                    <h4>Descripcion:</h4>
+                    <textarea class="form-control descripcion"></textarea>
+<br>
+                    <h4>Precio inversion</h4>
+                    <input class="form-control inversion" type="number">
+<br>
+                    <h4>Precio Venta</h4>
+                    <input class="form-control Venta" type="number">
+<br>
+                    <h4>Img</h4>
+                    <input class="form-control img" type="file">
+<br>
+                    <div class="botones">
+                    <button class="btn btn-primary boton1 mt-3">Enviar</button>
+                    
+                    <button class="btn btn-danger boton2 mt-3">Eliminar</button>
+                </div>
+                </form>
+            </div>
+            <div class="table" class="col-md-6">
+                <table >
+                    <thead class="tabla2">
+                        <tr>
+                            <td style=" text-align: center; border: #333 solid 2px;">cantidad</td>
+                            <td style=" text-align: center; border: #333 solid 2px;">producto</td>
+                            <td style=" text-align: center; border: #333 solid 2px;">descripcion</td>
+                            <td style=" text-align: center; border: #333 solid 2px;">precio inversion</td>
+                            <td style=" text-align: center; border: #333 solid 2px;">precio venta</td>
+                            <td style=" text-align: center; border: #333 solid 2px;">img</td>
+                            <td style=" text-align: center; border: #333 solid 2px;">Eliminar</td>
+                            <td style=" text-align: center; border: #333 solid 2px;">Editar</td>
+                        </tr>
+                    </thead>
+                    <br><br>
+                
+                    <tbody id="cuerpo"></tbody>
+                </table>
+            </div>
+        </div>
+    
+        <footer>
+            <a href="#titulo2">VOLVER AL BOTON DE AGREGAR</a>
+           </footer>
+</div>
+   
+   
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
     <script src="index.js"></script>
 </body>
 </html>

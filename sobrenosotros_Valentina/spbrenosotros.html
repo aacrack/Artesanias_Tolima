@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title >SOBRE NOSOTROS</title>
-    
-	<link rel="shortcut icon" href="img/logo.jpeg" type="image/x-icon">
-    
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
+    <link rel="shortcut icon" href="img/logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    
     <header id="titulo2">
 		
         <div class="logo1">
@@ -23,26 +27,28 @@
             <span class="material-symbols-outlined"><h1>Menu </h1></span>
           </label>
           <nav class="navbar">
-              <ul>
-                <li><a href="http://127.0.0.1:5501/inicio/">Inicio</a></li>
-                <li> <a href="http://127.0.0.1:5501/tienda%20onlinea/tienda.html">Productos</a>
-                  <ul class="nosotros-sub-menu">
-                      <li><a href="#">Manillas</a></li>
-                      <li><a href="#">Gorras</a></li>
-                      <li><a href="#">Bolsos</a></li>
-                  </ul>
-              </li>
-                <li><a href="http://127.0.0.1:5501/sobrenosotros_Valentina/spbrenosotros.html">Sobre Nosotros</a></li>
-               
-              </ul>
-          </nav>
+            <ul>
+              <li><a href="../inicio/index.html">Inicio</a></li>
+              <li> <a href="../tienda onlinea/tienda.html">Productos</a>
+                <ul class="nosotros-sub-menu">
+                    <li><a href="#">Manillas</a></li>
+                    <li><a href="#">Gorras</a></li>
+                    <li><a href="#">Bolsos</a></li>
+                </ul>
+            </li>
+              <li><a href="../sobrenosotros_Valentina/spbrenosotros.html">Sobre Nosotros</a></li>
+             
+            </ul>
+        </nav>
       </header>
-      <section class="headerjiji">
+      
+      <section  class="headerjiji" id="headerjiji">
         <h1 class="headerjeje">PUEBLITO TOLIMENSE</h1>
 
       </section>
+   
      <section class="gia" >
-        <div class="tt">
+        <div class="col-md-12" class="tt">
             <a href="#direccion">DIRECCIÓN</a>
             <a href="#vision">  VISION </a>
             <a href="#mision"> MISION </a>
@@ -53,7 +59,8 @@
     </section > 
     <br id="vision"><br><br>
     
-    <section id="letras">  
+    <section class="container" id="letras"> 
+        <article class="article0"></article> 
         <article class="article1">
             <h1 style="color:  rgb(129, 129, 129);">VISION</h1>
             <p>Poder hacer que nuestros productos sean comercializados a nivel de toda nuestra región y a si mismo <span id="mision"></span>poder llegar a nivel nacional e internacional 
@@ -61,7 +68,7 @@
             <br >
         </article>
        <br><br><br>
-        <article class="article2" >
+        <article  class="article2" >
             <h1  style="color:  rgb(129, 129, 129);">MISION</h1>
             <p>Somos una empresa que nació del barrio el salado queriendo brindarle al publico en general una variedad de productos artesanales que hicieran homenaje a Ibagué nuestra ciudad musical de Colombia y por ende al Pueblito Tolimense (barrio especial el Salado). Cabe recordar que en un casi 100% de los <span id="creo"></span> productos que vendernos son artesanales, elaborados a mano. <br>
             </p>
@@ -85,13 +92,14 @@
             <img src="img/primeraFoto.jpeg" alt="">
         </article>
         <br><br><br>
-            <article id="direcion"> 
-                <h1   style="color: rgb(214, 131, 95);">  DIRECCIÓN   </h1>
-                <h2><p>Carrera 9 # 144 – 38 en el barrio especial EL SALADO 
-                </p></h2>
-                <img class="img_ubi" src="img/ubi.jpeg" width="400" />
-                <a id="llegar" target="_blank" href="https://moovitapp.com/ibagu%C3%A9-4506/poi/Calle%20144/t/es-419?tll=4.447856_-75.144815&ref=1&poiType=street&customerId=4908&af_sub8=%2Findex%2Fes-419%2Ftransporte_p%25C3%25BAblico-Calle_144-Ibagu%25C3%25A9-street_25763377-4506"><h2><samp style="color: rgb(0, 0, 0); ">Has click aqui para llegar</samp></h2></a>
-            </article>
+        <article id="direcion">
+            <h1 >DIRECCIÓN</h1>
+            <h2><p>Carrera 9 # 144 – 38 en el barrio especial EL SALADO</p></h2>
+            <img class="img_ubi" src="img/ubi.jpeg" width="400" />
+            <a id="llegar" target="_blank" href="https://moovitapp.com/ibagu%C3%A9-4506/poi/Calle%20144/t/es-419?tll=4.447856_-75.144815&ref=1&poiType=street&customerId=4908&af_sub8=%2Findex%2Fes-419%2Ftransporte_p%25C3%25BAblico-Calle_144-Ibagu%25C3%25A9-street_25763377-4506">
+                <h1 style="color: rgb(0, 0, 0);"> Has click aqui para llegar</h1>
+            </a>
+        </article>
             <br>
             
             <br>
@@ -109,17 +117,22 @@
 </section>
     </section>
     <br><br><br>
-    
 
-    <footer id="lick">
-        <section class="comienzo">
-        <a href="#titulo">Ir al comienzo</a>
+
+    <footer  id="lick">
+        <section class="col-md-4,5 " class="comienzo container">
+        <a  href="#headerjiji">Ir al comienzo</a>
 
         <a href="mailto:nicolas@gmail.com">Contáctame aquí</a>
     </section>
-        <p>Copyright 2021</p>
+        <p>SI ARTESANIAS DESEAS ADQUIRIR A PUEBLITO TOLIMENCE DEBERIAS ASISTIR</p>
     
     </footer>
+
     
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> 
 </body>
 </html>     

@@ -1,98 +1,100 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 #direcion{
-    width: 50%;
-    margin: 0 auto;
+  width: 50%;
+  margin: 0 auto;
 }
 .direccion {
-    text-align: center;
-    font-family: Arial, sans-serif;
+  text-align: center;
+  font-family: Arial, sans-serif;
 } 
 
 #letras {
-    padding: 50px;
-    margin-left: 130px;
-    width: 80%;
-    background-color: #e0e0e0;
-  }
-  article{
-    width: 50%;
-    text-align: justify;
-  }
+  padding: 50px;
+  margin-left: 130px;
+  width: 80%;
+  background-color: #e0e0e0;
+}
+article{
+  width: 50%;
+  text-align: justify;
+}
 
-  #mision, #vision, #creo {
-    text-align: justify;
-  }
-  .logo1{
-    padding-left: 17px;
-  }
-  .img_Pf img{
-    position: relative;
-    width: 500px;
-    margin-top: -600px;
-    margin-left: 250px;
-    z-index: 0;
-  }
+#mision, #vision, #creo {
+  text-align: justify;
+}
+.logo1{
+  padding-left: 17px;
+}
+.img_Pf img{
+  position: relative;
+  width: 490px;
+  height: 310px;
+  margin-top: -450px;
+  margin-left: 520px;
+  z-index: 0;
+}
+
 p{
-    font-size: 110%;
+  font-size: 110%;
 }
 a{
-    color: #fffdfd;
-    font-size: 20px;
-   
-    text-decoration: none;
+  color: #fffdfd;
+  font-size: 20px;
+ 
+  text-decoration: none;
 }
 a:hover{
-    color:rgb(104, 108, 94)
-    
+  color:rgb(104, 108, 94)
+  
 }
 .gia{
-    display: flex;
-    height: 70px;
-    background-color: rgba(171, 110, 35, 0.769);
-    text-align:center;
-    width: 100%;
+  display: flex;
+  height: 70px;
+  background-color: rgba(171, 110, 35, 0.769);
+  text-align:center;
+  width: 100%;
 }
 .gia a {
-    border-right: 3px solid rgb(255, 255, 255) ;
-    text-align: center;
-    font-size:2rem;
-    margin: 15px 15px 200px 5px;  
+  border-right: 3px solid rgb(255, 255, 255) ;
+  text-align: center;
+  font-size:2rem;
+  margin: 15px 15px 200px 5px;  
 }
 .tt {
-    display: flex;
-    margin: 0 19%;
+  display: flex;
+  margin: 0 19%;
 }
 
 
 .contactos img{
-    width: 30px;
-    height: 30px;
-    margin: 10px;
+  width: 30px;
+  height: 30px;
+  margin: 10px;
 }
 .contactos ul{
-    margin: 20px;
-    list-style: none;
-    display: flex;
-    margin-left: 800px;
+  margin: 20px;
+  list-style: none;
+  display: flex;
+  margin-left: 800px;
 }
 .contactos{
-    height: 50px;
+  height: 50px;
 }
 .headerjiji{
-    background-image: url(img/fondo.jpeg);
-    height: 600px;
-    background-size: cover;
-  
-  background-attachment: fixed ;
-  position: relative;
+  background-image: url(img/fondo.jpeg);
+  height: 600px;
+  background-size: cover;
+
+background-attachment: fixed ;
+position: relative;
 }
 .headerjeje{
-  position: absolute;
+position: absolute;
 color: rgb(255, 255, 255);
 font-size:50px;
 margin-left:20%;
@@ -100,293 +102,240 @@ margin-top: 240px;
 text-shadow: 2px 2px 4px rgba(202, 85, 85, 0.781);
 }
 #titulo2 {
-  position: fixed;
- 
-  background: rgb(173, 48, 10);
-  
-  padding: 0px 4%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 1000;
-  height: 80px;
-  background-image: url(img1/fondo.jpeg);
-  width: 100%;
+position: fixed;
+
+background: rgb(173, 48, 10);
+
+padding: 0px 4%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+z-index: 1000;
+height: 80px;
+background-image: url(img1/fondo.jpeg);
+width: 100%;
 }
 .pue{
-  margin-left: 10px;
-  color: black;
+margin-left: 10px;
+color: black;
 }
 .logo1{
 margin-left:1px ;
 }
 
 header .logo1  img{
-  margin-left: -60px;
-  position: absolute;
-  height: 60px;
-  margin-top: -10px
+margin-left: -60px;
+position: absolute;
+height: 60px;
+margin-top: -10px
 }
 header .navbar ul {
-  list-style: none;
+list-style: none;
 
 }
 header .navbar ul li {
-  position: relative;
-  float: left;
-  
+position: relative;
+float: left;
+
 }
 header .navbar ul li a {
-  font-size: 20px;
-  padding: 20px;
-  color: #333;
-  display: block;
+font-size: 20px;
+padding: 20px;
+color: #333;
+display: block;
 }
 header .navbar ul li a:hover {
-  background: #333;
-  color: #fff;
+background: #333;
+color: #fff;
 }
 
 header .navbar ul li ul {
-  position: absolute;
-  left: 0;
-  top: 100%;
-  width: 200px;
-  background: transparent;
-  display: none;
+position: absolute;
+left: 0;
+top: 100%;
+width: 200px;
+background: transparent;
+display: none;
 }
 
 header .navbar ul li ul li {
-  width: 100%;
-  border-top: 1px solid rgba(0, 0, 0, .1);
+width: 100%;
+border-top: 1px solid rgba(0, 0, 0, .1);
 }
 
 header .navbar ul li ul li ul {
-  left: 100px;
-  top: 0;
+left: 100px;
+top: 0;
 }
 
 header .navbar ul li:hover > ul {
-  display: block;
+display: block;
 }
 
 #menu-bar {
-  display: none;
+display: none;
 }
 
 header label {
-  font-size: 20px;
-  color: #333;
-  cursor: pointer;
-  display: none;
+font-size: 20px;
+color: #333;
+cursor: pointer;
+display: none;
 }
 
-
+.article0{
+  background-image: url(img/soñora.jpeg);
+  background-size: cover;
+  width: 490px;
+  height: 885px;
+  position: absolute;
+  margin-left: 520px;
+  margin-top: -10px;
+}
 
 footer{
-  background-color: rgb(23, 23, 30);
-  padding: 3rem;
-  color:rgb(255, 255, 255);
-  font-size:20px;
+background-color: rgb(23, 23, 30);
+padding: 3rem;
+color:rgb(255, 255, 255);
+font-size:20px;
 }
 footer section{
-  float: right;
+float: right;
 }
 footer p{
-  margin: 0;
+margin: 0;
 
 }
 footer a{ 
-  transition: 3s;
-  color: aliceblue;
-  text-decoration: none;
-  padding: 2rem 2rem;
-  
+transition: 3s;
+color: aliceblue;
+text-decoration: none;
+padding: 2rem 2rem;
+
 }
 footer a:hover{
-  color: blueviolet;
+color: blueviolet;
 
 }
-
-
-
-
-
-/* responsive tablet */
-@media (min-width:768px)    {
-  .headerjiji{
-    width: 100%;
-}
-.headerjeje{
- margin-left: 190px;
- top: 70px;
-}
-.contactos ul{
-  position: absolute;
- margin-left: 490px;
- }
- .gia{
-    height: 70px;
-    width: 100%;
-}
-
-.tt {
-    margin: 0 6%;
-}
-.img_Pf img{
-  width: 500px;
-  height: 270px;
-  top:280px;
-  left: -210px;
-}
- article{
-    width: 90%;
-    padding-left: 50px;
-  }
-  #letras {
-    
-    margin-left: 90px;
-    
-  }
-  #direcion{
-    width: 90%;
-    margin-top: 300px;
-}
-}
-@media screen and (min-width:1280px){
-  
-  .headerjiji{
-    width: 100%;
-}
-.headerjeje{
- margin-left: 400px;
- top: 40px;
-}
-.contactos ul{
-  position: absolute;
- margin-left: 790px;
- }
- .gia{
-    height: 70px;
-    width: 100%;
-}
-
-.tt {
-    margin: 0 19%;
-}
-.img_Pf img{
-  width: 500px;
-  height: 300px;
-  top: 215%;
-  left: 52%;
-}
- article{
-    width: 50%;
-    padding-left: 20px;
-  }
-  #letras {
-    
-    margin-left: 140px;
-    
-  }
-  
-  #direcion{
-    text-align: center;
-    margin-top: 0px;
-}
-}
-/* responsive menu */
 @media screen and (max-width:991px) {
-  header {
-      
-      width: 200px;
-  }
-  #titulo2{
-    height: 150px;
-  }
-  header label {
-      display: initial;
-  }
-
-  header .navbar {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      right: 0;
-      background:rgb(179, 111, 9);
-      border-top: 1px solid rgba(0, 0, 0, 0);
-      display: none;
-      height: 320px;
-      
-      
-  }
-  header .navbar ul li a {
-    font-size: 40px;
-    padding: 30px;
-    color: #fffdfd;
-    display: block;
-    border-top: 3px solid black;
-  }
-  header .navbar.show-menu {
-      display: block;
-      
-  }
-
-  header .navbar ul li {
-      width: 100%;
-      height: 100px;
-     
-  }
-
-  header .navbar ul li ul {
-      position: relative;
-      width: 100%;
-      
-  }
-
-  header .navbar ul li ul li {
-      background: pink;
-      
-  }
-
-  header .navbar ul li ul li ul {
-      width: 100%;
-      left: 0;
-      
-  }
-  header .navbar ul li ul li ul {
-    font-size: 20px;
-}
-
-  #menu-bar:checked ~ .navbar {
-      display: initial;
-     
-  }
-
-  
-  header .navbar .nosotros-sub-menu {
-      display: none;
-      position: relative;
-     
-  }
-  
-  header .navbar .nosotros-sub-menu.show-nosotros {
-      display: block;
-      
-    }
+header {
     
-   header .logo1  {
-        padding-left: 21px ;
-      
-      }
-      header .logo1 img {
-        width: 120px;
-       height: 120px;
-       margin-top: -30px;
-      }
-      header .logo1 h1 {
-        font-size: 40px;
-        margin-left: 70px;
-      }   
+    width: 200px;
+}
+#titulo2{
+  height: 150px;
+}
+header label {
+    display: initial;
 }
 
+header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background:rgb(179, 111, 9);
+    border-top: 1px solid rgba(0, 0, 0, 0);
+    display: none;
+    height: 320px;
+    
+    
+}
+header .navbar ul li a {
+  font-size: 40px;
+  padding: 30px;
+  color: #fffdfd;
+  display: block;
+  border-top: 3px solid black;
+}
+header .navbar.show-menu {
+    display: block;
+    
+}
+
+header .navbar ul li {
+    width: 100%;
+    height: 100px;
+   
+}
+
+header .navbar ul li ul {
+    position: relative;
+    width: 100%;
+    
+}
+
+header .navbar ul li ul li {
+    background: pink;
+    
+}
+
+header .navbar ul li ul li ul {
+    width: 100%;
+    left: 0;
+    
+}
+header .navbar ul li ul li ul {
+  font-size: 20px;
+}
+
+#menu-bar:checked ~ .navbar {
+    display: initial;
+   
+}
+
+
+header .navbar .nosotros-sub-menu {
+    display: none;
+    position: relative;
+   
+}
+
+header .navbar .nosotros-sub-menu.show-nosotros {
+    display: block;
+    
+  }
+  
+ header .logo1  {
+      padding-left: 21px ;
+    
+    }
+    header .logo1 img {
+      width: 120px;
+     height: 120px;
+     margin-top: -30px;
+    }
+    header .logo1 h1 {
+      font-size: 40px;
+      margin-left: 70px;
+    }   
+}
+
+@media (min-width:330px) and  (max-width:570px){
+  .article0{
+    background-image: url(img/soñora.jpeg);
+    background-size: cover;
+    width: 190px;
+    height: 185px;
+    position: absolute;
+    margin-left: 40px;
+    margin-top: -10px;
+  }   
+  .img_Pf img{
+    position: relative;
+    width:190px;
+    height: 310px;
+    margin-top: -450px;
+    margin-left: 10px;
+    z-index: 0;
+  }
+  .contactos ul{
+    margin: 20px;
+    list-style: none;
+    display: flex;
+    margin-left: 100px;
+  }
+  .headerjiji{
+    width: 120%;
+  }
+}

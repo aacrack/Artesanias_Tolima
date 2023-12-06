@@ -135,3 +135,55 @@ const showHTML = () => {
 	valorTotal.innerText = `$${total}`;
 	countProducts.innerText = totalOfProducts;
 };
+
+
+const traerDatos = async() => {
+
+    const peticion = await fetch("http://127.0.0.1:8000/api/Register_productos/")
+    const respuesta = await peticion.json()
+    return respuesta
+}
+const crearHTML = async () => {
+    const nombre = await traerDatos()
+    for( let i of nombre){
+        item.innerHTML += `
+      
+
+		<div class="item">
+				<section class="container">
+					<div class="slider">
+						<a href="">
+						<ul>
+							<li>
+								<img  src="${i.foto}">
+							</li>
+							<li>
+								<img src="${i.foto}">
+							</li>
+							<li>
+								<img src="${i.foto}">
+							</li>
+							
+						</ul>
+					</a>
+					</div>
+				</section>
+				<div class="info-product">
+					
+					<h2 class="valen">${i.producto}</h2>
+					<p class="price">${i.precio_venta}</p>
+					<button class="btn-add-cart">AÑADIR AL CARRITO</button>
+				</div>
+			</div>
+
+        `
+    }
+   
+}
+
+
+traerDatos()
+crearHTML()
+
+
+
