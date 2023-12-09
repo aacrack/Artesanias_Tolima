@@ -1,15 +1,18 @@
 const nombre = document.querySelector(".nombre")
 const apellido = document.querySelector(".apellido")
 const edad = document.querySelector(".edad")
-const BTN_r = document.querySelector(".BTN_r")
-const cantidad = document.querySelector(".cantidad")
-const producto = document.querySelector(".producto")
-const descripcion = document.querySelector(".descripcion")
-const inversion = document.querySelector(".inversion")
-const Venta = document.querySelector(".Venta")
-const img = document.querySelector(".img")
+const BTN_r = document.querySelector("#BTN_r")
+const cantidad = document.querySelector("#cantidad")
+const producto = document.querySelector("#producto")
+const descripcion = document.querySelector("#descripcion")
+const inversion = document.querySelector("#inversion")
+const Venta = document.querySelector("#Venta")
+const img = document.querySelector("#imagen")
+const img2 = document.querySelector("#imagen2")
+const img3 = document.querySelector("#imagen3")
 const boton = document.querySelector(".boton")
 const cuerpo = document.querySelector("#cuerpo")
+
 
 // function ejecutarsaludo(){
 
@@ -59,16 +62,81 @@ const cuerpo = document.querySelector("#cuerpo")
 // })
 // }
 
+let IMG = ""
+
+const valorImg = (e) => {
+    IMG = e.target.files[0]
+}
+
+img.onchange = valorImg
+
+let IMG2 = ""
+
+const valorImg1 = (e) => {
+    IMG2 = e.target.files[0]
+}
+
+img2.onchange = valorImg1
+let IMG3 = ""
+
+const valorImg2 = (e) => {
+    IMG = e.target.files[0]
+}
+
+img3.onchange = valorImg2
+
+
+BTN_r.addEventListener("click", () => {
+
+    let informacion = new FormData()
+    informacion.append("cantidad", cantidad.value)
+    informacion.append("producto", producto.value)
+    informacion.append("descripcion", descripcion.value)
+    informacion.append("precio_inversion", inversion.value)
+    informacion.append("precio_venta", Venta.value)
+    informacion.append("img", IMG)
+    informacion.append("img1", IMG2)
+    informacion.append("img2", IMG3)
+
+
+    
+
+    fetch("http://127.0.0.1:8000/api/Register_productos/", {
+        method: 'POST',
+        body: informacion
+    })
+})
+
+
 // BTN_r.addEventListener("click", async() => {
-//     fetch("http://127.0.0.1:8000/registro_p/", {
+//     fetch("http://127.0.0.1:8000/api/Register_imagen/", {
 //         method: 'POST',
 //         body: JSON.stringify({
+//             quantity: cantidad.value,
+//             product: producto.value,
+//             description: descripcion.value,
+//             price_inversion: inversion.value,
+//             price_venta: Venta.value,
+//             file: imagen.value,
+//         }),
+//         headers: { "content-type": "application/json" }
+//     })
+// })
+
+// BTN_r.addEventListener("click", () => {
+//     fetch("http://127.0.0.1:8000/api/Register_productos/", {
+        
+//         method: 'POST',
+//         body: JSON.stringify({  
 //             cantidad: cantidad.value,
 //             producto: producto.value,
 //             descripcion: descripcion.value,
 //             precio_inversion: inversion.value,
 //             precio_venta: Venta.value,
-//             img: img.value,
+//             foto: img.value,
+//             img: img2.value,
+//             img1: img3.value,        
+
 //         }),
 //         headers: { "content-type": "application/json" }
 //     })
@@ -128,9 +196,12 @@ const crearHTML = async () => {
         <td class="tabla2" style=" text-align: center; border: #333 solid 2px;">${i.precio_inversion}</td>
         <td class="tabla2"  style=" text-align: center; border: #333 solid 2px;">${i.precio_venta}</td>
 
-        <td class="tabla2"  style=" text-align: center; border: #333 solid 2px;"> <img class=img" src="${i.foto}" width="100px" height="100px"></td>
+        <td class="tabla2"  style=" text-align: center; border: #333 solid 2px;"> <img class=img" src="${i.img}" width="100px" height="100px"></td>
+        <td class="tabla2"  style=" text-align: center; border: #333 solid 2px;"> <img class=img" src="${i.img1}" width="100px" height="100px"></td>
+        <td class="tabla2"  style=" text-align: center; border: #333 solid 2px;"> <img class=img" src="${i.img2}" width="100px" height="100px"></td>
         <td  class="tabla2" style=" text-align: center; border: #333 solid 2px;"><button class="cajita-btn-delete" id_pais="${i.id}"> Eliminar </button></td>
-        <td class="tabla2" class="tabla2"  style=" text-align: center; border: #333 solid 2px;"><button "> Editar </button></td>
+        <td class="
+        " class="tabla2"  style=" text-align: center; border: #333 solid 2px;"><button "> Editar </button></td>
         </table>
         
                       
