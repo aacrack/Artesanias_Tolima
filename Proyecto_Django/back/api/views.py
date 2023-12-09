@@ -5,8 +5,8 @@ import json
 from api.models import Register
 from api.models import Register_Productos
 from rest_framework.viewsets import ModelViewSet
-from .serializer import productoserializer
-from .models import Register_Productos
+from .serializer import productoserializer,imagenserializer
+from .models import Register_Productos,imagenes
 
 
 
@@ -103,6 +103,10 @@ class productoViewset(ModelViewSet):
     queryset = Register_Productos.objects.all()
     serializer_class = productoserializer
 
+class imagenViewset(ModelViewSet):
+
+    queryset = imagenes.objects.all()
+    serializer_class = imagenserializer
 
 
 

@@ -35,11 +35,24 @@ class Register_Productos(models.Model):
     descripcion = models.CharField(max_length=1000,null=False)
     precio_inversion = models.IntegerField(null=False)
     precio_venta = models.IntegerField(null=False)
-    foto = models.ImageField(upload_to='animales/', default="animales/perro.png")
-    img = models.ImageField(upload_to='animales/', default="animales/perro.png")
+    img = models.ImageField(upload_to='animales/')
     img1 = models.ImageField(upload_to='animales/', default="animales/perro.png")
-
+    img2 = models.ImageField(upload_to='animales/', default="animales/perro.png")
+ 
 
 
     # texto = "{1} ({0})" 
     # return texto.format(self.producto  , self.cantidad)
+
+
+
+class imagenes(models.Model):
+    quantity = models.IntegerField(null=False)
+    product = models.CharField(max_length=50,null=False)
+    description = models.CharField(max_length=100,null=False)
+    price_inversion = models.IntegerField(null=False)
+    price_venta = models.IntegerField(null=False)
+
+    file = models.ImageField(upload_to='animales/')
+
+  
