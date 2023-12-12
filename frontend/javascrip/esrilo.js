@@ -143,7 +143,7 @@ const img_1 = document.querySelector(".img_1");
 const titulo_info = document.querySelector(".titulo_info");
 const precio = document.querySelector(".precio");
 const descripcion = document.querySelector(".descripcion");
-const boton= document.querySelectorAll("ver_mas")
+const container= document.querySelector(".container")
 
 const traerDatos = async () => {
     try {
@@ -180,7 +180,7 @@ const crearHTML = async () => {
                         <p class="price">${i.precio_venta}</p>
                         <button class="btn-add-cart">AÑADIR AL CARRITO</button>
                     </div>
-                    <button onclick="mostrarTabla2()" class="ver_mas" id_productos="${i}"><img src="img2/mas.jpg" alt=""></button>
+                    <button class="ver_mas" id_productos="${i}"><img src="img2/mas.jpg" alt=""></button>
                 </div>
             `;
         }
@@ -189,10 +189,13 @@ const crearHTML = async () => {
 
         Vista_Previa.forEach(boton => {
             boton.addEventListener("click", async (e) => {
+                console.log(e.target.attributes[1].value);
+                container.style.display = "block"
                 const Porductos_ID = nombre[e.target.attributes[1].value];
                 titulo_info.textContent = Porductos_ID.producto;
                 precio.textContent = Porductos_ID.precio_venta;
                 descripcion.textContent = Porductos_ID.descripcion;
+               
             });
         });
     } catch (error) {
