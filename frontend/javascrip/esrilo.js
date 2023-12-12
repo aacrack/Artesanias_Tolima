@@ -1,3 +1,5 @@
+
+
 const btnCart = document.querySelector('.container-cart-icon');
 const containerCartProducts = document.querySelector(
 	'.container-cart-products'
@@ -136,54 +138,89 @@ const showHTML = () => {
 	countProducts.innerText = totalOfProducts;
 };
 
+  
+const img_1 = document.querySelector(".img_1");
+const titulo_info = document.querySelector(".titulo_info");
+const precio = document.querySelector(".precio");
+const descripcion = document.querySelector(".descripcion");
 
-const traerDatos = async() => {
-
-    const peticion = await fetch("http://127.0.0.1:8000/api/Register_productos/")
-    const respuesta = await peticion.json()
-    return respuesta
-}
-const crearHTML = async () => {
-    const nombre = await traerDatos()
-    for( let i of nombre){
-        item.innerHTML += `
-      
-
-		<div class="item">
-				<section class="container">
-					<div class="slider">
-						<a href="">
-						<ul>
-							<li>
-								<img  src="${i.foto}">
-							</li>
-							<li>
-								<img src="${i.foto}">
-							</li>
-							<li>
-								<img src="${i.foto}">
-							</li>
-							
-						</ul>
-					</a>
-					</div>
-				</section>
-				<div class="info-product">
-					
-					<h2 class="valen">${i.producto}</h2>
-					<p class="price">${i.precio_venta}</p>
-					<button class="btn-add-cart">AÑADIR AL CARRITO</button>
-				</div>
-			</div>
-
-        `
+const traerDatos = async () => {
+    try {
+        const peticion = await fetch("http://127.0.0.1:8000/api/Register_productos/");
+        const respuesta = await peticion.json();
+        return respuesta;
+    } catch (error) {
+        console.error("Error al obtener datos:", error);
+        throw error;
     }
-   
+};
+
+const crearHTML = async () => {
+    try {
+        const nombre = await traerDatos();
+        const item = document.getElementById("item"); // Asegúrate de tener un elemento con el ID "item" en tu HTML
+
+        for (let i of nombre) {
+            item.innerHTML += `
+                <div class="item">
+                    <section class="container">
+                        <div class="slider">
+                            <a href="">
+                                <ul>
+                                    <li><img src="${i.img}"></li>
+                                    <li><img src="${i.img1}"></li>
+                                    <li><img src="${i.img2}"></li>
+                                </ul>
+                            </a>
+                        </div>
+                    </section>
+                    <div class="info-product">
+                        <h2 class="valen">${i.producto}</h2>
+                        <p class="price">${i.precio_venta}</p>
+                        <button class="btn-add-cart">AÑADIR AL CARRITO</button>
+                    </div>
+            
+                </div>
+            `;
+        }
+
+        const Vista_Previa = document.querySelectorAll(".container");
+
+        Vista_Previa.forEach(boton => {
+            boton.addEventListener("click", async (e) => {
+                const Porductos_ID = nombre[e.target.attributes[1].value];
+                titulo_info.textContent = Porductos_ID.producto;
+                precio.textContent = Porductos_ID.precio_venta;
+                descripcion.textContent = Porductos_ID.descripcion;
+            });
+        });
+    } catch (error) {
+        console.error("Error al crear HTML:", error);
+    }
+};
+
+function mostrarTabla2() {
+    var tabla = document.getElementById("mas2");
+    if (tabla.style.display === "none") {
+        tabla.style.display = "block";
+    } else {
+        tabla.style.display = "none";
+    }
 }
 
+window.addEventListener('scroll', function () {
+    var miDivMovable = document.getElementById('mas2');
+    var scrollTop = window.scrollY;
+    miDivMovable.style.top = scrollTop + 'px';
+});
 
-traerDatos()
-crearHTML()
+// Llama a la función para iniciar el proceso
+crearHTML();
 
 
 
+
+
+   
+
+	 
