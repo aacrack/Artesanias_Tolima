@@ -409,7 +409,13 @@ img{
         background-color: #000;
         color: #000;
     }
-
+.ver_mas{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-left: 240px;
+    margin-top: -130px
+}
 
 
 @media screen and (max-width:991px) {
@@ -579,6 +585,14 @@ font-size: 0px
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 }
+.ver_mas{
+    
+    width: 20px;
+    height: 20px;
+    margin-left: 140px;
+    margin-top: -100px
+}
+
 .saber{
     width: 200%;
     margin-left: -50px;
@@ -717,6 +731,13 @@ font-size: 0px
     .container-items{
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
+    }
+    #ver_mas{
+    
+        width: 20px;
+        height: 20px;
+        margin-left: 140px;
+        margin-top: -100px
     }
     .slider-nav{
         position: absolute;

@@ -143,6 +143,7 @@ const img_1 = document.querySelector(".img_1");
 const titulo_info = document.querySelector(".titulo_info");
 const precio = document.querySelector(".precio");
 const descripcion = document.querySelector(".descripcion");
+const boton= document.querySelectorAll("ver_mas")
 
 const traerDatos = async () => {
     try {
@@ -179,12 +180,12 @@ const crearHTML = async () => {
                         <p class="price">${i.precio_venta}</p>
                         <button class="btn-add-cart">AÑADIR AL CARRITO</button>
                     </div>
-            
+                    <button onclick="mostrarTabla2()" class="ver_mas" id_productos="${i}"><img src="img2/mas.jpg" alt=""></button>
                 </div>
             `;
         }
 
-        const Vista_Previa = document.querySelectorAll(".container");
+        const Vista_Previa = document.querySelectorAll(".ver_mas");
 
         Vista_Previa.forEach(boton => {
             boton.addEventListener("click", async (e) => {

@@ -80,10 +80,10 @@ img2.onchange = valorImg1
 let IMG3 = ""
 
 const valorImg2 = (e) => {
-    IMG = e.target.files[0]
+    IMG3 = e.target.files[0]
 }
 
-img3.onchange = valorImg2
+img3.onchange = valorImg
 
 
 BTN_r.addEventListener("click", () => {
