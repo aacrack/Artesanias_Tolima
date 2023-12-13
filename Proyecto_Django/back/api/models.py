@@ -6,7 +6,7 @@ from django.db import models
 class  Register(models.Model):
     nombre_c=models.CharField(max_length=50,null=False)
     correo_electronico=models.CharField(max_length=50,null=False)
-    usuario=models.CharField(max_length=50,null=False)
+    user=models.CharField(max_length=50,null=False)
     password=models.CharField(max_length=50,null=False)
     
   
