@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Admin</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
    
@@ -19,9 +19,9 @@
 
               <nav class="navbar">
                   <ul>
-                    <li><a href="http://127.0.0.1:5501/inicio/">Inicio</a></li>
-                    <li> <a href="http://127.0.0.1:5501/tienda%20onlinea/tienda.html">Productos</a></li>
-                    <li><a href="http://127.0.0.1:5501/sobrenosotros_Valentina/spbrenosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="http://127.0.0.1:5501/frontend/inicio/index.html">Inicio</a></li>
+                    <li> <a href="http://127.0.0.1:5501/frontend/tienda%20onlinea/tienda.html">Productos</a></li>
+                    <li><a href="http://127.0.0.1:5501/frontend/sobrenosotros_Valentina/spbrenosotros.html">Sobre Nosotros</a></li>
                    
                   </ul>
               </nav>
@@ -31,10 +31,8 @@
         <div class="row">
             <div class="col-md-6">
                 
-                <a class="Add" href="#" onclick="mostrarTabla()">AÑADIR PRODUCTO</a>
-
-<br><br>
-                <form id="tabla" style="display:none;">
+                <a class="Add" href="#" onclick="mostrarTabla()">AÑADIR PRODUCTO</a><br><br>
+               <form id="tabla" style="display:none;">
                     <h4 >Cantidad:</h4>
                     <input id="cantidad"  class="form-control cantidad" type="number">
 <br>
@@ -64,13 +62,58 @@
                     <input id="imagen3" type="file">
 <br>
 <br>
-                    <div class="botones">
-                    <button  id="BTN_r">Enviar</button>
-                    
-                    <button class="btn btn-danger boton2 mt-3">Eliminar</button>
-                </div>
-                </form>
-            </div>
+<div class="botones">
+    <button id="BTN_r">Enviar </button>
+    
+</div>
+</form>
+</div>
+
+
+
+
+<br><br>
+                <form id="formulario" style="display:none;">
+                    <h4 >Cantidad:</h4>
+                    <input id="nueva_cantidad"  class="form-control cantidad" type="number">
+<br>
+                    <h4>Producto:</h4>
+                    <input id="nuevo_producto" class="form-control producto" type="text">
+<br>
+                    <h4>Descripcion:</h4>
+                    <textarea  id="nueva_descripcion" class="form-control descripcion"></textarea>
+<br>
+                    <h4>Precio inversion</h4>
+                    <input id ="nueva_inversion" class="form-control inversion" type="number">
+<br>
+                    <h4>Precio Venta</h4>
+                    <input id="Venta_nueva" class="form-control Venta" type="number">
+<br>
+                    <h4>Img</h4>
+                    <input id="imagen_nueva" type="file">
+<br>
+<br>
+<br>
+                    <h4>Img</h4>
+                    <input id="imagen2_nueva" type="file">
+<br>
+<br>
+<br>
+                    <h4>Img</h4>
+                    <input id="imagen3_nueva" type="file">
+<br>
+<br>
+
+<div class="botones">
+    <button  id="BTN_U">Actualizar </button>
+   
+    
+    <button class="btn btn-danger boton2 mt-3">Eliminar</button>
+</div>
+</form>
+</div>
+
+                   
             <div class="table" class="col-md-6">
                 <table >
                     <thead class="tabla2">
@@ -85,6 +128,7 @@
                             <td style=" text-align: center; border: #333 solid 2px;">img3</td>
                             <td style=" text-align: center; border: #333 solid 2px;">Eliminar</td>
                             <td style=" text-align: center; border: #333 solid 2px;">Editar</td>
+                           
                         </tr>
                     </thead>
                     <br><br>

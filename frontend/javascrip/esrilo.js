@@ -19,6 +19,9 @@ const productsList = document.querySelector('.container-items');
 // Variable de arreglos de Productos
 let allProducts = [];
 
+let productos = []
+
+
 const valorTotal = document.querySelector('.total-pagar');
 
 const countProducts = document.querySelector('#contador-productos');
@@ -180,7 +183,6 @@ const crearHTML = async () => {
                         <p class="price">${i.precio_venta}</p>
                         <button class="btn-add-cart">AÑADIR AL CARRITO</button>
                     </div>
-                    <button class="ver_mas" id_productos="${i}"><img src="img2/mas.jpg" alt=""></button>
                 </div>
             `;
         }
@@ -191,7 +193,7 @@ const crearHTML = async () => {
             boton.addEventListener("click", async (e) => {
                 console.log(e.target.attributes[1].value);
                 container.style.display = "block"
-                const Porductos_ID = nombre[e.target.attributes[1].value];
+                const Porductos_ID = productos[e.target.attributes[1].value];
                 titulo_info.textContent = Porductos_ID.producto;
                 precio.textContent = Porductos_ID.precio_venta;
                 descripcion.textContent = Porductos_ID.descripcion;
