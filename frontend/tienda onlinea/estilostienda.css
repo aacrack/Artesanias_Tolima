@@ -260,6 +260,12 @@ img{
     color: #fff;
   }
   
+  #ir{
+    margin: 0px 0px 0px 0px;
+  }
+  #mail{
+    margin: 0px 0px 0px 58px;
+  }
   header .navbar ul li ul {
     position: absolute;
     left: 0;
@@ -842,7 +848,7 @@ font-size: 0px
         margin-left: -200px;
         font-size: 20px;
         color: rgb(255, 255, 255);
-        padding: 200px;
+        /* padding: 200px; */
     }
     #ver_mas{
     
