@@ -141,7 +141,9 @@ BTN_r.addEventListener("click", () => {
         body: informacion
     })
 })
-BTN_U.addEventListener("click", () => {
+BTN_U.addEventListener("click", (e) => {
+    
+    e.preventDefault() 
 
     let informacion = new FormData()
     informacion.append("cantidad", cantidad_nueva.value)
@@ -149,13 +151,13 @@ BTN_U.addEventListener("click", () => {
     informacion.append("descripcion", descripcion_nueva.value)
     informacion.append("precio_inversion", inversion_nueva.value)
     informacion.append("precio_venta", Venta_nueva.value)
-    informacion.append("img", IMG4)
-    informacion.append("img1", IMG5)
-    informacion.append("img2", IMG6)
+    informacion.append("img",IMG4)
+    informacion.append("img1",IMG5)
+    informacion.append("img2",IMG6)
     fetch(`http://127.0.0.1:8000/api/Register_productos/${id}/`, {
         method: 'PUT',
         body: informacion
-    })
+    })  
 })
 
 
@@ -252,7 +254,7 @@ const crearHTML = async () => {
         <td class="tabla2"  style=" text-align: center; border: #333 solid 2px;"> <img class=img" src="${i.img1}" width="100px" height="100px"></td>
         <td class="tabla2"  style=" text-align: center; border: #333 solid 2px;"> <img class=img" src="${i.img2}" width="100px" height="100px"></td>
         <td  class="tabla2" style=" text-align: center; border: #333 solid 2px;"><button class="cajita-btn-delete" id_producto="${i.id}"> Eliminar </button></td>
-        <td class="tabla2"  style=" text-align: center; border: #333 solid 2px;"><button class="cajita-btn-editar id_producto="${i.id} "> Editar </button></td>
+        <td class="tabla2"  style=" text-align: center; border: #333 solid 2px;"><button class="cajita-btn-editar" id_producto="${i.id}"> Editar </button></td>
         </table>
         
         </table>
