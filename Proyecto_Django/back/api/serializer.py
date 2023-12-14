@@ -1,5 +1,5 @@
 from rest_framework.serializers import ModelSerializer
-from .models import Register_Productos,imagenes
+from .models import Register_Productos,imagenes,Register
 
 class productoserializer(ModelSerializer):
     class Meta:
@@ -14,4 +14,8 @@ class imagenserializer(ModelSerializer):
         model= imagenes
         fields= '__all__'
         
+class Registerserializer(ModelSerializer):
+    class Meta:
 
+        model= Register
+        fields= '__all__'

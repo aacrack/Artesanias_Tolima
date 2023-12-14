@@ -5,8 +5,9 @@ import json
 from api.models import Register
 from api.models import Register_Productos
 from rest_framework.viewsets import ModelViewSet
-from .serializer import productoserializer,imagenserializer
-from .models import Register_Productos,imagenes
+from .serializer import productoserializer,imagenserializer,Registerserializer
+from .models import Register_Productos,imagenes,Register
+import jwt
 
 
 
@@ -32,7 +33,7 @@ def registro_p(request):
     Register.objects.create (
         nombre_c=datos_registro["nombre_c"],
         correo_electronico=datos_registro["correo_electronico"],
-        usuario=datos_registro["usuario"],
+        user=datos_registro["user"],
         password=datos_registro["password"], 
          
           
@@ -40,6 +41,24 @@ def registro_p(request):
 
      )
     return JsonResponse({"Mensaje": "Sus datos se han registrado correctamente"})
+ 
+Clave = "Admin"
+
+@csrf_exempt
+def Login (request):
+    informacion = json.loads(request.body)
+    usuario = informacion["Usuario"]
+    contraseña = informacion["Contraseña"]
+    token = ""
+    Usuarios = Register.objects.all()
+    for i in Usuarios: 
+        if i.user == usuario and i.password == contraseña:
+            payload = {"id": i.id}
+            token = jwt.encode(payload,Clave,algorithm='HS256')
+    return JsonResponse({"token":token})
+
+
+
 
 def eliminar(request,id):
     
@@ -107,6 +126,12 @@ class imagenViewset(ModelViewSet):
 
     queryset = imagenes.objects.all()
     serializer_class = imagenserializer
+
+class RegisterViewset(ModelViewSet):
+
+    queryset = Register.objects.all()
+    serializer_class = Registerserializer
+
 
 
 

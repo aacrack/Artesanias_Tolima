@@ -28,7 +28,8 @@ urlpatterns = [
     path('api/',include(router.urls)),   
     path('registro/',views.registro_p, name="Esta funcion va a registrar los datos del usuario"),
     path('eliminar/<int:id>/',views.eliminar, name="Esta funcion va a registrar los datos del usuario"),
-   
+    path('Login/', views.Login, name='Validar login'),
+    
     path('registro_p/',views.registro, name="Esta funcion va a registrar los datos del usuario")
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

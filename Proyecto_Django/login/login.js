@@ -69,19 +69,42 @@ const correo_electronico = document.querySelector("#correo_electronico")
 const usuario = document.querySelector("#usuario")
 const password = document.querySelector("#password")
 const boton_r = document.querySelector("#boton_r")
+const contraseña = document.querySelector("#contraseña")
+const user = document.querySelector("#user")
+const BTN_I = document.querySelector("#boton_i")
 
 boton_r.addEventListener("click", () => {
-    fetch("http://127.0.0.1:8000/registro_p/", {
+    fetch("http://127.0.0.1:8000/api/Register_user/", {
         method: 'POST',
         body: JSON.stringify({
             nombre_c: nombre_c.value,
             correo_electronico: correo_electronico.value,
-            usuario: usuario.value,
+            user: usuario.value,
             password: password.value,
         }),
         headers: { "content-type": "application/json" }
     })
 })
+
+BTN_I.addEventListener("click", async () => {
+    const Peticion = await fetch("http://localhost:8000/Login/", {
+        method : "POST", 
+        body : JSON.stringify ({
+            Usuario : user.value,
+            Contraseña : contraseña.value,
+        }),
+        headers : {"content-type" : "application/json"}
+    })
+    const Respuesta = await Peticion.json ()
+    localStorage.setItem("token", Respuesta.token)
+    if (Respuesta.token != "") {
+        window.location.replace("../../frontend/inicio/index.html")
+    }
+    else{
+        alert ("Inserta los valores correctamente")
+    }
+})
+
 
 
 

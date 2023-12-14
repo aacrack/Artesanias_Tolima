@@ -12,8 +12,19 @@ const img2 = document.querySelector("#imagen2")
 const img3 = document.querySelector("#imagen3")
 const boton = document.querySelector(".boton")
 const cuerpo = document.querySelector("#cuerpo")
+const formulario = document.querySelector("#form")
+const cantidad_nueva = document.querySelector("#nueva_cantidad")
+const producto_nueva = document.querySelector("#nuevo_producto")
+const descripcion_nueva = document.querySelector("#nueva_descripcion")
+const inversion_nueva = document.querySelector("#nueva_inversion")
+const Venta_nueva = document.querySelector("#Venta_nueva")
+const imagen_nueva = document.querySelector("#imagen_nueva")
+const imagen2_nueva = document.querySelector("#imagen2_nueva")
+const imagen3_nueva = document.querySelector("#imagen3_nueva")
+const BTN_U = document.querySelector("#BTN_U")
+const formulario_nuevo = document.querySelector("#formulario")
 
-
+let id = 0
 // function ejecutarsaludo(){
 
 //     fetch("http://localhost:8000/saludar/",{
@@ -83,7 +94,29 @@ const valorImg2 = (e) => {
     IMG3 = e.target.files[0]
 }
 
-img3.onchange = valorImg
+img3.onchange = valorImg2
+let IMG4 = ""
+
+const valorImg3 = (e) => {
+    IMG4 = e.target.files[0]
+}
+
+imagen_nueva.onchange = valorImg3
+
+let IMG5 = ""
+
+const valorImg4 = (e) => {
+    IMG5 = e.target.files[0]
+}
+
+imagen2_nueva.onchange = valorImg4
+let IMG6 = ""
+
+const valorImg5 = (e) => {
+    IMG6 = e.target.files[0]
+}
+
+imagen3_nueva.onchange = valorImg5
 
 
 BTN_r.addEventListener("click", () => {
@@ -101,11 +134,32 @@ BTN_r.addEventListener("click", () => {
 
     
 
+    
     fetch("http://127.0.0.1:8000/api/Register_productos/", {
         method: 'POST',
+
         body: informacion
     })
 })
+BTN_U.addEventListener("click", (e) => {
+    
+    e.preventDefault() 
+
+    let informacion = new FormData()
+    informacion.append("cantidad", cantidad_nueva.value)
+    informacion.append("producto", producto_nueva.value)
+    informacion.append("descripcion", descripcion_nueva.value)
+    informacion.append("precio_inversion", inversion_nueva.value)
+    informacion.append("precio_venta", Venta_nueva.value)
+    informacion.append("img",IMG4)
+    informacion.append("img1",IMG5)
+    informacion.append("img2",IMG6)
+    fetch(`http://127.0.0.1:8000/api/Register_productos/${id}/`, {
+        method: 'PUT',
+        body: informacion
+    })  
+})
+
 
 
 // BTN_r.addEventListener("click", async() => {
@@ -199,9 +253,10 @@ const crearHTML = async () => {
         <td class="tabla2"  style=" text-align: center; border: #333 solid 2px;"> <img class=img" src="${i.img}" width="100px" height="100px"></td>
         <td class="tabla2"  style=" text-align: center; border: #333 solid 2px;"> <img class=img" src="${i.img1}" width="100px" height="100px"></td>
         <td class="tabla2"  style=" text-align: center; border: #333 solid 2px;"> <img class=img" src="${i.img2}" width="100px" height="100px"></td>
-        <td  class="tabla2" style=" text-align: center; border: #333 solid 2px;"><button class="cajita-btn-delete" id_pais="${i.id}"> Eliminar </button></td>
-        <td class="
-        " class="tabla2"  style=" text-align: center; border: #333 solid 2px;"><button "> Editar </button></td>
+        <td  class="tabla2" style=" text-align: center; border: #333 solid 2px;"><button class="cajita-btn-delete" id_producto="${i.id}"> Eliminar </button></td>
+        <td class="tabla2"  style=" text-align: center; border: #333 solid 2px;"><button class="cajita-btn-editar" id_producto="${i.id}"> Editar </button></td>
+        </table>
+        
         </table>
         
                       
@@ -211,6 +266,7 @@ const crearHTML = async () => {
         `
     }
     Delete()
+    Abrirpanel()
 }
 
 function Delete() {
@@ -218,11 +274,21 @@ function Delete() {
 
     BTN_E.forEach(BTN => {
         BTN.addEventListener("click", async (e) => {
-            const id = e.target.attributes[1].value
+            id = e.target.attributes[1].value
             const peticion = await fetch(`http://127.0.0.1:8000/api/Register_productos/${id}/`, {
                 method: 'DELETE',
                 headers: { "content-type": "application/json" }
             })
+        })
+    })
+}
+function Abrirpanel() {
+    const BTN_A = document.querySelectorAll(".cajita-btn-editar")
+
+    BTN_A.forEach(BTN => {
+        BTN.addEventListener("click", async (e) => {
+            id = e.target.attributes[1].value
+            formulario_nuevo.style.display = "block"
         })
     })
 }
