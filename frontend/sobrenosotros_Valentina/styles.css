@@ -63,7 +63,7 @@ a:hover{
   width: 100%;
 }
 .gia a {
-  border-right: 3px solid rgb(255, 255, 255) ;
+ 
   text-align: center;
   font-size:2rem;
   margin: 15px 15px 200px 5px; 
@@ -76,24 +76,31 @@ a:hover{
 
 
 .contactos img{
-  width: 30px;
-  height: 30px;
+  width: 13px;
+  height: 13px;
   margin: 10px;
 }
 .contactos ul{
+  position: absolute;
   margin: 20px;
   list-style: none;
   display: flex;
-  margin-left: 800px;
+ margin-top: -2px;
+ margin-left: -800px;
+}
+.contactos li{
+ background-color: white;
+ border-radius: 50px;
 }
 .contactos{
   height: 50px;
+  margin-left: -300px;
 }
 .headerjiji{
-  background-image: url(img/fondo.jpeg);
+  background-image: url(img/portada.jpg);
   height: 600px;
   background-size: cover;
-
+  background-position: center;
 background-attachment: fixed ;
 position: relative;
 }
@@ -189,6 +196,7 @@ display: none;
 
 .article0{
   background-image: url(img/soñora.jpeg);
+  background-position: center;
   background-size: cover;
   width: 490px;
   height: 885px;
@@ -196,12 +204,17 @@ display: none;
   margin-left: 520px;
   margin-top: -10px;
 }
-
+#map{
+  height: 400px;
+  width: 700px;
+  margin-left: -100px;
+}
 footer{
 background-color: rgb(23, 23, 30);
 padding: 3rem;
 color:rgb(255, 255, 255);
 font-size:20px;
+height: 130px;
 }
 footer section{
 float: right;
@@ -314,6 +327,26 @@ header .navbar .nosotros-sub-menu.show-nosotros {
 }
 
 @media (min-width:300px) and  (max-width:570px){
+  .contactos img{
+    width: 2px;
+    height: 2px;
+    margin: 10px;
+    margin-left: -8px;
+  }
+  #map{
+    height: 215px;
+    width: 300px;
+    margin-left: -6px;
+  }
+  .contactos li{
+   background-color: white;
+   border-radius: 50px;
+  width: 50px;
+  }
+  .contactos{
+    height: 50px;
+    margin-left: -100px;
+  }
   .article0{
     background-image: url(img/señora2.jpeg);
     background-size: cover;
@@ -332,10 +365,10 @@ header .navbar .nosotros-sub-menu.show-nosotros {
     z-index: 0;
   }
   .contactos ul{
-    margin: 20px;
+    margin: 56px;
     list-style: none;
     display: flex;
-    margin-left: 50%;
+    margin-left: 18%;
   }
   .contactos ul img{
    width: 25px;
@@ -396,6 +429,7 @@ header .navbar .nosotros-sub-menu.show-nosotros {
   }
   footer{
     width: 120%;
+    height: 160px;
     padding: 3rem;
     font-size:20px;
     }
@@ -414,15 +448,33 @@ header .navbar .nosotros-sub-menu.show-nosotros {
     }
 }
 @media (min-width:571px) and (max-width:820px){
-       
+ 
+  .contactos img{
+    margin: 10px;
+    margin-left: -107px;
+  }
+  .contactos li{
+   background-color: white;
+   border-radius: 50px;
+  width: 70px;
+  }
+  #map{
+    height: 310px;
+    width: 500px;
+    margin-left: 79px;
+  }
+  .contactos{
+    height: 50px;
+    margin-left: -50px;
+  }
   article{
     width: 100%;
   }
   #letras {
-    padding: 50px;
-    margin-left: 45px;
+    padding: 31px;
+    margin-left: 24px;
     width: 100%;
-  }
+}
   .headerjeje{
     font-size: 45px;
     margin-top: 350px;
@@ -434,7 +486,8 @@ header .navbar .nosotros-sub-menu.show-nosotros {
  .article0{
   background-image: url(img/señora2.jpeg);
   background-size:cover;
-  width: 75%;
+  background-position: center;
+  width: 84%;
   height: 500px;
   position: absolute;
   margin-left:10px;
@@ -458,10 +511,10 @@ header .navbar .nosotros-sub-menu.show-nosotros {
   z-index: 0;
 }
 .contactos ul{
-  margin: 20px;
+  margin: 59px;
   list-style: none;
   display: flex;
-  margin-left: 450px;
+  margin-left: 195px;
 }
 .contactos ul img{
  width: 35px;
@@ -473,18 +526,13 @@ header .navbar .nosotros-sub-menu.show-nosotros {
 footer{
   width: 100%;
   padding: 3rem;
+  height: 200px;
   }
-  
-  footer p{
-  margin: 0;
-  text-align: center;
-  margin-top: 80px;
-  }
+
   footer a{ 
-    padding-left: 0%;
     font-size: 25px;
     text-align: center;
-    margin-left: 100px;
+    margin-left: 95px;
   }
 }
 @media (min-width:822px) and (max-width:1250px) {

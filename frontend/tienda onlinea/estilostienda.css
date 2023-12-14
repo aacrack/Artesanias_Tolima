@@ -177,7 +177,6 @@ img{
     text-align: center;
 }
 
-
 .hidden{
     display: none;
 }
@@ -192,12 +191,14 @@ img{
 }
 .headerjiji{
     background-image: url(img2/hola.jpg);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: blur(50px);
     height: 600px; 
 }
 .headerjeje{
+    text-align: center;
     position: absolute;
   color: rgb(255, 255, 255);
   text-shadow: 10px 10px 17px rgba(255, 0, 0, 0.781);
@@ -399,7 +400,14 @@ img{
         margin-top: 205px;
         margin-left: -330px;
     }
-
+    .carri_envia img {
+        height: auto;
+        transition: transform 0.3s;
+      }
+      
+      .carri_envia img:hover {
+        transform: scale(1.2);
+      }
     .slider-nav img{
         width: 60px ;
         height: 60px ;
@@ -416,7 +424,52 @@ img{
     margin-left: 240px;
     margin-top: -130px
 }
-
+.contactos img{
+    width: 13px;
+    height: 13px;
+    margin: 10px;
+  }
+  .contactos ul{
+    position: absolute;
+    margin: 20px;
+    list-style: none;
+    display: flex;
+   margin-top: -2px;
+   margin-left: -1150px;
+  }
+  .contactos li{
+   background-color: white;
+   border-radius: 50px;
+  }
+  .contactos{
+    height: 50px;
+    margin-left: -300px;
+  }
+  footer{
+    background-color: rgb(23, 23, 30);
+    padding: 3rem;
+    color:rgb(255, 255, 255);
+    font-size:20px;
+    height: 130px;
+    }
+    footer section{
+    float: right;
+    }
+    footer p{
+    margin: 0;
+    
+    }
+    footer a{ 
+    transition: 3s;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 2rem 2rem;
+    
+    }
+    footer a:hover{
+    color: blueviolet;
+    
+    }
 
 @media screen and (max-width:991px) {
     header {
@@ -504,35 +557,13 @@ img{
         
   
   }
-  footer{
-    background-color: rgb(23, 23, 30);
-    padding: 3rem;
-    color:rgb(255, 255, 255);
-    font-size:20px;
-}
-footer section{
-    float: right;
-}
-footer p{
-    margin: 0;
 
-}
-footer a{ 
-    transition: 3s;
-    color: aliceblue;
-    text-decoration: none;
-    padding: 2rem 2rem;
-    
-}
- footer a:hover{
-    color: blueviolet;
-  
-}
 @media screen and (max-width:767px) {
 .headerjiji{
       width: 100%; 
       height: 500px;
       background-size: cover;
+      text-align: center;
 }
 
 .valen{
@@ -580,11 +611,46 @@ font-size: 0px
  
     right: -70px;
 }
+
+.contactos img{
+    width: 12px;
+    height: 12px;
+    margin: 10px;
+    margin-top: 10px;
+    margin-left: -19px;
+  }
+  .contactos ul{
+    margin: 20px;
+   margin-top: 5px;
+   margin-left: 170px; 
+  }
+  .contactos li{
+   background-color: white;
+   border-radius: 50px;
+   width: 35px;
+   height: 34px;
+  }
+  .contactos{
+    height: 50px;
+    margin-left: -200px;
+  }
+  .comienzo{
+    padding-left: -200px;
+    width: 100%;
+}
+
+.comienzo a{
+    margin-left: -200px;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    padding: 200px;
+}
 .container-items{
     
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 }
+
 .ver_mas{
     
     width: 20px;
@@ -672,6 +738,7 @@ font-size: 0px
     margin-top: 53%;
     margin-left: 2%;
     text-align: center;
+
 }
 .slider{
     width:100%;
@@ -731,6 +798,38 @@ font-size: 0px
     .container-items{
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
+    }
+    .contactos img{
+        width: 20px;
+        height: 20px;
+        margin: 10px;
+        margin-top: 10px;
+        margin-left: -19px;
+      }
+      .contactos ul{
+        margin: 20px;
+       margin-top: -10px;
+       margin-left: 530px; 
+      }
+      .contactos li{
+       background-color: white;
+       border-radius: 50px;
+       width: 50px;
+      }
+      .contactos{
+        height: 50px;
+        margin-left: -200px;
+      }
+      .comienzo{
+        padding-left: -200px;
+        width: 100%;
+    }
+   
+    .comienzo a{
+        margin-left: -200px;
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        padding: 200px;
     }
     #ver_mas{
     
@@ -795,13 +894,12 @@ font-size: 0px
     }
    
     .headerjeje{
-
+        text-align: center;
         margin-top: 37%;
         margin-left: 23%;
     }
   }
-  @media screen and (min-width:1280px){
-            
+  @media screen and (min-width:1280px){ 
     .slider{
         width:100%;
         height: 190px;
@@ -872,6 +970,7 @@ font-size: 0px
 
         margin-top: 22%;
         margin-left:32%;
+        text-align: center;
     }
     
     .item{
@@ -884,12 +983,42 @@ font-size: 0px
         grid-template-columns: repeat(4, 1fr);
         gap: 10px;
     }  
+    
     .img_mas{ 
         position: absolute;
         margin-top: -140px;
         margin-left: 250px;
         height: 30px;
         width: 30px;
+    }
+    .contactos img{
+        width: 20px;
+        height: 20px;
+        margin: 10px;
+        margin-top: 10px;
+        margin-left: -2px;
+      }
+      .contactos ul{
+        margin: 20px;
+       margin-top: -10px;
+       margin-left: 930px; 
+      }
+      .contactos li{
+       background-color: white;
+       border-radius: 50px;
+       width: 80px;
+      }
+      .contactos{
+        height: 50px;
+        margin-left: -300px;
+      }
+      .comienzo{
+        width: 100%;
+    }
+    .comienzo a{
+        margin-left: -200px;
+        font-size: 20px;
+        color: rgb(255, 255, 255);
     }
   }
 

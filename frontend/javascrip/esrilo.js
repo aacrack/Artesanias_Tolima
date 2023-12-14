@@ -180,16 +180,15 @@ const crearHTML = async () => {
                         <p class="price">${i.precio_venta}</p>
                         <button class="btn-add-cart">AÑADIR AL CARRITO</button>
                     </div>
-                    <button class="ver_mas" id_productos="${i}"><img src="img2/mas.jpg" alt=""></button>
+                   
                 </div>
             `;
         }
 
-        const Vista_Previa = document.querySelectorAll(".ver_mas");
+        const Vista_Previa = document.querySelectorAll(".container");
 
         Vista_Previa.forEach(boton => {
             boton.addEventListener("click", async (e) => {
-                console.log(e.target.attributes[1].value);
                 container.style.display = "block"
                 const Porductos_ID = nombre[e.target.attributes[1].value];
                 titulo_info.textContent = Porductos_ID.producto;
@@ -221,10 +220,3 @@ window.addEventListener('scroll', function () {
 // Llama a la función para iniciar el proceso
 crearHTML();
 
-
-
-
-
-   
-
-	 

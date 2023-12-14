@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </head>
 <body>
     
@@ -57,14 +59,14 @@
         <article class="article0"></article> 
         <article class="article1">
             <h1 style="color:  rgb(129, 129, 129);">VISION</h1>
-            <p>Poder hacer que nuestros productos sean comercializados a nivel de toda nuestra región y a si mismo <span id="mision"></span>poder llegar a nivel nacional e internacional 
+            <p>Lograr que nuestros productos sean comercializados a nivel de toda nuestra región y a si mismo poder llegar a nivel nacional e internacional.
             </p>
             <br >
         </article>
        <br><br><br>
         <article  class="article2" >
             <h1  style="color:  rgb(129, 129, 129);">MISION</h1>
-            <p>Somos una empresa que nació del barrio el salado queriendo brindarle al publico en general una variedad de productos artesanales que hicieran homenaje a Ibagué nuestra ciudad musical de Colombia y por ende al Pueblito Tolimense (barrio especial el Salado). Cabe recordar que en un casi 100% de los <span id="creo"></span> productos que vendernos son artesanales, elaborados a mano. <br>
+            <p>Somos una empresa que nació en el barrio salado, queriendo brindarle al publico en general una variedad de productos artesanales que hicieran homenaje a Ibagué, nuestra ciudad musical de Colombia y por ende al Pueblito Tolimense. Cabe recordar que en un casi 100% de los  productos que vendemos son artesanales, elaborados a mano. <br>
             </p>
         </article>
         
@@ -89,42 +91,36 @@
         <article id="direcion">
             <h1 >DIRECCIÓN</h1>
             <h2><p>Carrera 9 # 144 – 38 en el barrio especial EL SALADO</p></h2>
-            <img class="img_ubi" src="img/ubi.jpeg" width="400" />
+            <div id="map" ></div>
+            <br>
             <a id="llegar" target="_blank" href="https://moovitapp.com/ibagu%C3%A9-4506/poi/Calle%20144/t/es-419?tll=4.447856_-75.144815&ref=1&poiType=street&customerId=4908&af_sub8=%2Findex%2Fes-419%2Ftransporte_p%25C3%25BAblico-Calle_144-Ibagu%25C3%25A9-street_25763377-4506">
                 <h1 style="color: rgb(0, 0, 0);"> Has click aqui para llegar</h1>
             </a>
         </article>
+            <br>    
             <br>
-            
-            <br>
-            <section class="contactos">
-    <br>
-    
-        <ul>
-           <li> <a href="https://instagram.com/artesanias_pueblito_tolimense?igshid=MTRpbTBsa3E4cmpkeQ== " target="_blank"><img src="img/instagram.png" alt=""></a></li>
-           <li> <a href="https://www.facebook.com/profile.php?id=100093408679881&mibextid=ZbWKwL" target="_blank"><img src="img/facebook.png" alt=""></a></li>
-           <li><a href="https://wa.link/0m5bgu" target="_blank"><img src="img/whatsapp.png" alt=""></a></li>
-           <li><a href="mailto:artesaniaspueblitotolimense@gmail.com" target="_blank"><img src="img/sobre.png" alt=""></a></li>
-        </ul>  
-<br><br>
-
-</section>
     </section>
-    <br><br><br>
-
-
+<br>
     <footer  id="lick">
         <section  class="comienzo">
         <a  href="#headerjiji">Ir al comienzo</a>
 
         <a href="mailto:nicolas@gmail.com">Contáctame aquí</a>
     </section>
-        <p>SI ARTESANIAS DESEAS ADQUIRIR A PUEBLITO TOLIMENCE DEBERIAS ASISTIR</p>
-    
+    <section class="contactos">
+    <ul> 
+      
+        
+        <li> <a href="https://instagram.com/artesanias_pueblito_tolimense?igshid=MTRpbTBsa3E4cmpkeQ== " target="_blank"><img src="img/instagram.png" alt=""></a></li>
+        <li> <a href="https://www.facebook.com/profile.php?id=100093408679881&mibextid=ZbWKwL" target="_blank"><img src="img/facebook.png" alt=""></a></li>
+        <li><a href="https://wa.link/0m5bgu" target="_blank"><img src="img/whatsapp.png" alt=""></a></li>
+        <li><a href="mailto:artesaniaspueblitotolimense@gmail.com" target="_blank"><img src="img/sobre.png" alt=""></a></li>
+     </ul>  
+    </section>
     </footer>
 
     
-
+<script src="mapa.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> 
